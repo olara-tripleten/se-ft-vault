@@ -438,25 +438,6 @@ p { color: black; }              /* Specificity: 1 */
 4. **Comment your code**
 5. **Keep specificity low**
 6. **Test across browsers**
-
----
-
-**Next Steps**
-
-
-
-**Practice Goals:**
-
-- Create an external stylesheet <!-- element class="fragment" -->
-- Style typography and colors <!-- element class="fragment" -->
-- Add spacing and borders <!-- element class="fragment" -->
-- Experiment with layout properties <!-- element class="fragment" -->
-
-
-
-**Coming Up:** Advanced layout techniques (Flexbox, Grid) and responsive design
-<!-- element class="fragment" -->
-
 ---
 
 **Resources**
