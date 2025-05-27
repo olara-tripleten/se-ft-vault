@@ -1,3 +1,4 @@
+
 #### Software Engineering
 
 Building applications with HTML, CSS, and JavaScript
@@ -27,7 +28,7 @@ We begin on the **Client Side** (frontend) using **HTML** and **CSS**
 
 ---
 
-# HTML
+# HTML 101
 
 _HyperText Markup Language_
 

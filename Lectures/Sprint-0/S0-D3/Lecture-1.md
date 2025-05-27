@@ -1,5 +1,5 @@
 
-**Basic CSS Properties**
+**More on CSS**
 
 What we'll be building
 <!-- element class="fragment" -->
