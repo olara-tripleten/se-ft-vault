@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"0e48acccbb2f85e9","type":"text","text":"Database","x":-160,"y":100,"width":250,"height":60},
+		{"id":"abdb94f9b529e8f9","type":"text","text":"Client","x":-160,"y":-180,"width":250,"height":60},
+		{"id":"1824febedea3a581","type":"text","text":"Server","x":-160,"y":-40,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"abd0b4356c2f2796","fromNode":"1824febedea3a581","fromSide":"top","toNode":"abdb94f9b529e8f9","toSide":"bottom"},
+		{"id":"2d8069779f926ec7","fromNode":"abdb94f9b529e8f9","fromSide":"bottom","toNode":"1824febedea3a581","toSide":"top"},
+		{"id":"077f4c1643a09274","fromNode":"1824febedea3a581","fromSide":"bottom","toNode":"0e48acccbb2f85e9","toSide":"top"},
+		{"id":"5654da678bdfd1d6","fromNode":"0e48acccbb2f85e9","fromSide":"top","toNode":"1824febedea3a581","toSide":"bottom"}
+	]
+}
