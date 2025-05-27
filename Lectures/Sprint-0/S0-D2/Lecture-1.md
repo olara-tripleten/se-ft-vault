@@ -17,7 +17,7 @@ CSS provides multiple ways to define element dimensions:
 
 Fixed Sizes <!-- element class="fragment" -->
 ```css
-.fixed-size {
+element {
   width: 300px;
   height: 200px;
 }
@@ -27,7 +27,7 @@ Fixed Sizes <!-- element class="fragment" -->
 Relative Sizes <!-- element class="fragment" -->
 
 ```css
-.responsive-size {
+element {
   width: 50%;
   height: 100vh;
 }
