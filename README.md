@@ -8,9 +8,11 @@ First clone the github repository:
 > https://github.com/olara-tripleten/se-ft-vault
 
 - Open the repository folder as an Obsidian Vault
-	![[obsidian-vault-open.png]]
+	![Open as Vault](./assets/obsidian-vault-open.png)
+	
 - Enable Slides Core Plugin
-	![[obsidian-core-plugin.png]]
+	![Obsidian Core Plugin](./assets/obsidian-core-plugin.png)
+
 - Install and enable Advanced Slides Plugin
-	![[obsidian-community-plugins.png]]
+	![Obsidian Slides Plugin](./assets/obsidian-community-plugins.png)
 
