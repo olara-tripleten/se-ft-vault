@@ -192,7 +192,7 @@ Flexbox (Flexible Box Layout) provides an efficient way to arrange, distribute, 
 
 ## Project
 
-![[clean-code-rules.png]]
+![Clean code project](clean-code-rules.png)
 Note: ⚠️ This should be live coded with the students, use this as an opportunity to Q&A to validate students learning?
 
 ---
