@@ -26,8 +26,6 @@
 
 **Welcome to CSS Mastery** Borders, Box-Sizing, and Responsible AI Learning
 
-
-
 Today we'll explore:
 
 - Advanced CSS border techniques <!-- element class="fragment" -->
@@ -50,7 +48,6 @@ Borders define the edges of elements and create visual hierarchy
 }
 ```
 
-
 Three essential properties: width, style, and color
 
 <!-- element class="fragment" -->
@@ -63,19 +60,20 @@ Three essential properties: width, style, and color
 .border-styles {
   /* Solid line */
   border: 2px solid #000;
-  
+
   /* Dashed line */
   border: 2px dashed #ff6b6b;
-  
+
   /* Dotted pattern */
   border: 3px dotted #4ecdc4;
-  
+
   /* Double line effect */
   border: 4px double #45b7d1;
 }
 ```
 
 Each style creates different visual impact and user experience
+
 <!-- element class="fragment" -->
 
 ---
@@ -91,8 +89,6 @@ Each style creates different visual impact and user experience
 }
 ```
 
-
-
 ```css
 /* Alternative syntax */
 .border-sides {
@@ -101,32 +97,31 @@ Each style creates different visual impact and user experience
   border-color: red blue green orange;
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 **Border Radius Magic** Creating rounded corners and shapes
 
-
-
 ```css
 .rounded-elements {
   /* Uniform radius */
   border-radius: 10px;
-  
+
   /* Individual corners */
   border-radius: 10px 20px 15px 5px;
-  
+
   /* Perfect circle */
   border-radius: 50%;
-  
+
   /* Elliptical shape */
   border-radius: 50px / 25px;
 }
 ```
 
-
 Transform rectangles into circles, pills, and custom shapes
+
 <!-- element class="fragment" -->
 
 ---
@@ -148,12 +143,12 @@ Transform rectangles into circles, pills, and custom shapes
 <!-- element class="fragment" -->
 
 This unpredictable sizing causes layout headaches!
+
 <!-- element class="fragment" -->
 
 ---
 
 **Box-Sizing: Content-Box** The default (and problematic) behavior
-
 
 ```css
 .content-box {
@@ -172,8 +167,6 @@ This unpredictable sizing causes layout headaches!
 
 **Box-Sizing: Border-Box** The solution for predictable layouts
 
-
-
 ```css
 .border-box {
   box-sizing: border-box;
@@ -182,6 +175,7 @@ This unpredictable sizing causes layout headaches!
   border: 5px solid #333;
 }
 ```
+
 - Width includes content, padding, AND borders <!-- element class="fragment" -->
 - Total width remains exactly 200px <!-- element class="fragment" -->
 - Content area shrinks to accommodate padding/borders <!-- element class="fragment" -->
@@ -197,12 +191,14 @@ This unpredictable sizing causes layout headaches!
 }
 ```
 
-Set once, benefit everywhere in your stylesheet 
+Set once, benefit everywhere in your stylesheet
+
 <!-- element class="fragment" -->
 
 ---
 
 **Visual Debugging Borders** Developer tools for layout understanding
+
 ```css
 /* Temporary debugging borders */
 * {
@@ -214,14 +210,14 @@ Set once, benefit everywhere in your stylesheet
   outline: 1px solid rgba(255, 0, 0, 0.5);
 }
 ```
+
 Quickly visualize element boundaries during development
+
 <!-- element class="fragment" -->
 
 ---
 
 **Responsible AI in Learning** Enhancing, not replacing, your skills
-
-
 
 **AI as a Learning Assistant:**
 
@@ -229,9 +225,8 @@ Quickly visualize element boundaries during development
 - Request code reviews and improvements <!-- element class="fragment" -->
 - Generate practice exercises and examples <!-- element class="fragment" -->
 
-
-
 **What AI Should NOT Replace:**
+
 <!-- element class="fragment" -->
 
 - Critical thinking and problem-solving <!-- element class="fragment" -->
@@ -242,15 +237,16 @@ Quickly visualize element boundaries during development
 
 **Effective AI Prompting** Getting quality help from AI tools
 
-
-
 **Good Prompt Example:** "Explain how box-sizing: border-box affects layout calculations, and show me a practical example with flexbox"
+
 <!-- element class="fragment" -->
 
 **Poor Prompt Example:** "Fix my CSS"
+
 <!-- element class="fragment" -->
 
 Be specific, provide context, and ask for explanations
+
 <!-- element class="fragment" -->
 
 ---
@@ -262,10 +258,9 @@ The (_not so_) hidden costs of automated code suggestions
 **Skill Atrophy Risks:**
 
 - Reduced typing practice leads to slower manual coding
-- Decreased memorization of syntax and method names 
+- Decreased memorization of syntax and method names
 - Weakened muscle memory for common programming patterns
-- 
-<!-- element class="fragment" -->
+- <!-- element class="fragment" -->
 
 ---
 
@@ -278,6 +273,7 @@ The (_not so_) hidden costs of automated code suggestions
 <!-- element class="fragment" -->
 
 ---
+
 **Code Quality Issues:**
 
 - Suggestions may not follow your project's conventions
@@ -290,55 +286,22 @@ The (_not so_) hidden costs of automated code suggestions
 
 **AI Learning Best Practices** Building genuine expertise
 
-
-
 1. **Understand Before Implementing**
-    - Don't copy-paste without comprehension
-    - Ask AI to explain the reasoning
+   - Don't copy-paste without comprehension
+   - Ask AI to explain the reasoning
 
 <!-- element class="fragment" -->
 
 2. **Practice Independently**
-    - Code without AI assistance regularly
-    - Build projects from scratch
+   - Code without AI assistance regularly
+   - Build projects from scratch
 
 <!-- element class="fragment" -->
 
 3. **Verify and Test**
-    - AI can make mistakes
-    - Always test AI-generated code
-  
+   - AI can make mistakes
+   - Always test AI-generated code
+
 <!-- element class="fragment" -->
 
 ---
-
-**Building Your CSS Toolkit** Essential border and box-sizing patterns
-
-<!-- element class="fragment" -->
-
-```css
-/* Starter template */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.card {
-  border: 1px solid #e1e5e9;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.button {
-  border: 2px solid #007bff;
-  border-radius: 4px;
-  padding: 0.5em 1em;
-  transition: border-color 0.3s ease;
-}
-
-.button:hover {
-  border-color: #0056b3;
-}
-```
