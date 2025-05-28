@@ -1,229 +1,344 @@
-**More on CSS**
+<style>
+	* {
+		width: 100%;
+			text-align: start;
+	}
+	.controls{
+		width: auto;
+		text-align: end;
+	}
+	h1 {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		font-size: 24px !important;
+		
+	}
+	h2 {
+		font-size: 48px !important;
+		font-weight: light;
+	}
+	
+	p, li {
+		font-size: 32px;
+	}
+</style>
 
-What we'll be building
+**Welcome to CSS Mastery** Borders, Box-Sizing, and Responsible AI Learning
 
+
+
+Today we'll explore:
+
+- Advanced CSS border techniques <!-- element class="fragment" -->
+- Box-sizing fundamentals for predictable layouts <!-- element class="fragment" -->
+- Responsible AI integration in your learning journey
 <!-- element class="fragment" -->
 
-note:
-
 ---
 
-## ![[clean-code-rules.png]]
+**Understanding CSS Borders** The foundation of visual design
 
-#### Header
+Borders define the edges of elements and create visual hierarchy
 
-![[clean-code-rules-header.png]]
-
-- Font Styles <!-- element class="fragment" -->
-- Dimensions <!-- element class="fragment" -->
-- Background Styles <!-- element class="fragment" -->
-
----
-
-HTML Structure
-
-```html {hl_lines=[1, 5]}
-<header class="header">
-  <h1 class="header-title">clean code rules</h1>
-</header>
-```
-
-<!-- element class="fragment" -->
-
----
-
-HTML Structure
-
-```html {hl_lines=[2, 3, 4]}
-<header class="header">
-  <h1 class="header-title">clean code rules</h1>
-</header>
-```
-
----
-
-CSS Background: Image
-
-```css {hl_lines=[2]}
-.header {
-  background-image: url("./header-background.png");
+```css
+.basic-border {
+  border: 2px solid #333;
+  border-width: 1px;
+  border-style: solid;
+  border-color: blue;
 }
 ```
 
----
 
-CSS Background: Size
-
-```css {hl_lines=[3]}
-.header {
-  background-image: url("./header-background.png");
-  background-size: cover; /* contain; w h; */
-}
-```
-
----
-
-CSS Background: Position
-
-```css {hl_lines=[4]}
-.header {
-  background-image: url("./header-background.png");
-  background-size: cover;
-  background-position: center;
-}
-```
-
----
-
-CSS Background: Repeat
-
-```css {hl_lines=[5]}
-.header {
-  background-image: url("./header-background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-```
-
----
-
-CSS Dimensions: Height
-
-```css {hl_lines=[6, 7, 8, 9, 10, 11]}
-.header {
-  background-image: url("./header-background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 35vh;
-  /*
-		Pixels are used when you need precision
-		Relative units are used when you want
-		adaptability
-	*/
-}
-```
-
----
-
-CSS Fonts: Size
-
-```css {hl_lines=[2]}
-.header-title {
-  font-size: 48px;
-}
-```
-
-For fonts it's common to use the following units `px`, `em`, `rem`
+Three essential properties: width, style, and color
 
 <!-- element class="fragment" -->
 
 ---
 
-CSS Fonts: weight
+**Border Styles Variety** Beyond the basic solid line
 
-```css {hl_lines=[3]}
-.header-title {
-  font-size: 48px;
-  font-weight: bold;
+```css
+.border-styles {
+  /* Solid line */
+  border: 2px solid #000;
+  
+  /* Dashed line */
+  border: 2px dashed #ff6b6b;
+  
+  /* Dotted pattern */
+  border: 3px dotted #4ecdc4;
+  
+  /* Double line effect */
+  border: 4px double #45b7d1;
 }
 ```
 
-You can use
-
+Each style creates different visual impact and user experience
 <!-- element class="fragment" -->
-
-- light, medium, bold, bolder, black <!-- element class="fragment" -->
-- 50, 100, ..., 1000 <!-- element class="fragment" -->
 
 ---
 
-CSS Fonts: Color
+**Individual Border Control** Precision styling for each side
 
-```css {hl_lines=[4]}
-.header-title {
-  font-size: 48px;
-  font-weight: bold;
-  color: white;
+```css
+.custom-borders {
+  border-top: 3px solid #e74c3c;
+  border-right: 1px dashed #3498db;
+  border-bottom: 2px dotted #2ecc71;
+  border-left: 4px double #f39c12;
 }
 ```
 
----
 
-`<main>`
 
-## ![[clean-code-rules-main.png]]
-
-`<main>`
-
-- Background Color <!-- element class="fragment" -->
-- Font-Styles <!-- element class="fragment" -->
-- Flexbox <!-- element class="fragment" -->
-- Image styles <!-- element class="fragment" -->
-
----
-
-`<main>` HTML Structure
-
-```html {hl_lines=[1, 3]}
-<main>
-  <!-- ... -->
-</main>
+```css
+/* Alternative syntax */
+.border-sides {
+  border-width: 3px 1px 2px 4px;
+  border-style: solid dashed dotted double;
+  border-color: red blue green orange;
+}
 ```
-
-```html {hl_lines=[1]}
-<main class="main">
-  <!-- ... -->
-</main>
-```
-
 <!-- element class="fragment" -->
 
 ---
 
-`<main>` card list
+**Border Radius Magic** Creating rounded corners and shapes
 
-```html {hl_lines=[2, 4]}
-<main class="main">
-  <ul class="cards">
-    <!-- Unordered list -->
-    <!-- ... -->
-  </ul>
-</main>
-```
 
-<!-- element class="fragment" -->
 
-```html {hl_lines=[3, 5]}
-<main class="main">
-  <ul class="cards">
-    <li class="card">
-      <!-- List Item -->
-      <!-- ... -->
-    </li>
-  </ul>
-</main>
-```
-
-<!-- element class="fragment" -->
-
----
-
-`.main` styles
-
-```css {hl_lines=[2]}
-.main {
-  background-color: gray;
+```css
+.rounded-elements {
+  /* Uniform radius */
+  border-radius: 10px;
+  
+  /* Individual corners */
+  border-radius: 10px 20px 15px 5px;
+  
+  /* Perfect circle */
+  border-radius: 50%;
+  
+  /* Elliptical shape */
+  border-radius: 50px / 25px;
 }
 ```
 
-```css {hl_lines=[3, 4]}
-.main {
-  background-color: gray;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+Transform rectangles into circles, pills, and custom shapes
+<!-- element class="fragment" -->
+
+---
+
+**The Box Model Challenge** Understanding the default behavior
+
+```css
+.default-box {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid #333;
+  margin: 10px;
 }
 ```
 
+**Total width**: 200px + 20px + 20px + 5px + 5px = 250px
+
 <!-- element class="fragment" -->
+
+This unpredictable sizing causes layout headaches!
+<!-- element class="fragment" -->
+
+---
+
+**Box-Sizing: Content-Box** The default (and problematic) behavior
+
+
+```css
+.content-box {
+  box-sizing: content-box; /* default */
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #333;
+}
+```
+
+- Width applies only to content area <!-- element class="fragment" -->
+- Padding and borders add to total size <!-- element class="fragment" -->
+- Makes responsive design challenging <!-- element class="fragment" -->
+
+---
+
+**Box-Sizing: Border-Box** The solution for predictable layouts
+
+
+
+```css
+.border-box {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #333;
+}
+```
+- Width includes content, padding, AND borders <!-- element class="fragment" -->
+- Total width remains exactly 200px <!-- element class="fragment" -->
+- Content area shrinks to accommodate padding/borders <!-- element class="fragment" -->
+
+---
+
+**Global Box-Sizing Reset** The modern standard approach
+
+```css
+/* Universal selector approach */
+* {
+  box-sizing: border-box;
+}
+```
+
+Set once, benefit everywhere in your stylesheet 
+<!-- element class="fragment" -->
+
+---
+
+**Visual Debugging Borders** Developer tools for layout understanding
+```css
+/* Temporary debugging borders */
+* {
+  border: 1px solid red;
+}
+
+/* More subtle approach */
+.debug {
+  outline: 1px solid rgba(255, 0, 0, 0.5);
+}
+```
+Quickly visualize element boundaries during development
+<!-- element class="fragment" -->
+
+---
+
+**Responsible AI in Learning** Enhancing, not replacing, your skills
+
+
+
+**AI as a Learning Assistant:**
+
+- Ask for explanations of complex concepts <!-- element class="fragment" -->
+- Request code reviews and improvements <!-- element class="fragment" -->
+- Generate practice exercises and examples <!-- element class="fragment" -->
+
+
+
+**What AI Should NOT Replace:**
+<!-- element class="fragment" -->
+
+- Critical thinking and problem-solving <!-- element class="fragment" -->
+- Understanding fundamental concepts <!-- element class="fragment" -->
+- Creative decision-making <!-- element class="fragment" -->
+
+---
+
+**Effective AI Prompting** Getting quality help from AI tools
+
+
+
+**Good Prompt Example:** "Explain how box-sizing: border-box affects layout calculations, and show me a practical example with flexbox"
+<!-- element class="fragment" -->
+
+**Poor Prompt Example:** "Fix my CSS"
+<!-- element class="fragment" -->
+
+Be specific, provide context, and ask for explanations
+<!-- element class="fragment" -->
+
+---
+
+## Don't use autocompletion
+
+The (_not so_) hidden costs of automated code suggestions
+
+**Skill Atrophy Risks:**
+
+- Reduced typing practice leads to slower manual coding
+- Decreased memorization of syntax and method names 
+- Weakened muscle memory for common programming patterns
+- 
+<!-- element class="fragment" -->
+
+---
+
+**Learning Impediments:**
+
+- May accept suggestions without understanding the code
+- Reduces exploration of alternative solutions
+- Creates dependency that hinders independent problem-solving
+
+<!-- element class="fragment" -->
+
+---
+**Code Quality Issues:**
+
+- Suggestions may not follow your project's conventions
+- Can introduce subtle bugs or inefficient patterns
+- May generate overly complex solutions for simple problems
+
+<!-- element class="fragment" -->
+
+---
+
+**AI Learning Best Practices** Building genuine expertise
+
+
+
+1. **Understand Before Implementing**
+    - Don't copy-paste without comprehension
+    - Ask AI to explain the reasoning
+
+<!-- element class="fragment" -->
+
+2. **Practice Independently**
+    - Code without AI assistance regularly
+    - Build projects from scratch
+
+<!-- element class="fragment" -->
+
+3. **Verify and Test**
+    - AI can make mistakes
+    - Always test AI-generated code
+  
+<!-- element class="fragment" -->
+
+---
+
+**Building Your CSS Toolkit** Essential border and box-sizing patterns
+
+<!-- element class="fragment" -->
+
+```css
+/* Starter template */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.button {
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  transition: border-color 0.3s ease;
+}
+
+.button:hover {
+  border-color: #0056b3;
+}
+```
