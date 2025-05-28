@@ -1,38 +1,44 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CSS Basics Project</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <h1>Welcome to My Styled Page</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Styled Page</h1>
+    </header>
 
-  <section>
-    <h2>About This Page</h2>
-    <p>This page demonstrates key CSS concepts such as dimensions, backgrounds, and typography.</p>
-  </section>
+    <section>
+      <h2>About This Page</h2>
+      <p>
+        This page demonstrates key CSS concepts such as dimensions, backgrounds,
+        and typography.
+      </p>
+    </section>
 
-  <section>
-    <h2>More Info</h2>
-    <p>We’re also exploring how inheritance works and the difference between absolute and relative units!</p>
-  </section>
+    <section>
+      <h2>More Info</h2>
+      <p>
+        We’re also exploring how inheritance works and the difference between
+        absolute and relative units!
+      </p>
+    </section>
 
-  <footer>
-    <p>Made with 💙 while learning CSS</p>
-  </footer>
-</body>
+    <footer>
+      <p>Made with 💙 while learning CSS</p>
+    </footer>
+  </body>
 </html>
 ```
 
 ```css
 /* Inherited Typography */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   color: #333;
   line-height: 1.6;
   margin: 0;
@@ -41,7 +47,7 @@ body {
 
 /* Background + Relative Dimensions */
 header {
-  background-image: url('https://picsum.photos/1200/400');
+  background-image: url("https://picsum.photos/1200/400");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,8 +81,8 @@ h2 {
 }
 
 p {
-  font-size: 1rem;  /* Root-relative */
-  padding: 10px;     /* Absolute unit */
+  font-size: 1rem; /* Root-relative */
+  padding: 10px; /* Absolute unit */
 }
 
 /* Footer Styling */
@@ -86,5 +92,4 @@ footer {
   text-align: center;
   color: white;
 }
-
 ```

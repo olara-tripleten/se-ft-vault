@@ -1,8 +1,6 @@
-
 ---
 # CSS 101
 #CSS
-
 ---
 
 **CSS: Cascading Style Sheets**
@@ -27,7 +25,6 @@ Before diving into CSS, let's cover some essential HTML attributes we'll need:
 
 The `id` attribute creates a **unique identifier** for an element:
 
-
 ```html
 <h1 id="main-title">Welcome to My Site</h1>
 <div id="navigation">Menu content</div>
@@ -37,10 +34,11 @@ The `id` attribute creates a **unique identifier** for an element:
 <!-- element class="fragment" -->
 
 **Rules:**
+
 <!-- element class="fragment" -->
 
-- Each `id` must be unique on the page 
-- Used for specific targeting in CSS and JavaScript 
+- Each `id` must be unique on the page
+- Used for specific targeting in CSS and JavaScript
 
 <!-- element class="fragment" -->
 
@@ -49,7 +47,6 @@ The `id` attribute creates a **unique identifier** for an element:
 **HTML Attributes: class**
 
 The `class` attribute groups elements for styling:
-
 
 ```html
 <p class="highlight">Important paragraph</p>
@@ -61,7 +58,9 @@ The `class` attribute groups elements for styling:
 <!-- element class="fragment" -->
 
 **Rules:**
+
 <!-- element class="fragment" -->
+
 - Multiple elements can share the same class
 - Elements can have multiple classes (space-separated)
 
@@ -75,15 +74,15 @@ The `class` attribute groups elements for styling:
 
 <!-- element class="fragment" -->
 
-
-
 CSS defines:
+
 <!-- element class="fragment" -->
+
 - Colors and fonts
 - Layout and spacing
 - Animations and effects
 - Responsive design
-  
+
 <!-- element class="fragment" -->
 
 ---
@@ -92,22 +91,23 @@ CSS defines:
 
 CSS uses **selectors** and **declarations**:
 
-
 ```css
 selector {
-    property: value;
-    another-property: another-value;
+  property: value;
+  another-property: another-value;
 }
 ```
 
 <!-- element class="fragment" -->
 
 **Example:**
+
 <!-- element class="fragment" -->
+
 ```css
 h1 {
-    color: blue;
-    font-size: 24px;
+  color: blue;
+  font-size: 24px;
 }
 ```
 
@@ -121,7 +121,9 @@ h1 {
 
 ```css
 /* Lowest specificity */
-p { color: black; }
+p {
+  color: black;
+}
 ```
 
 <!-- element class="fragment" -->
@@ -132,17 +134,24 @@ p { color: black; }
 
 ```css
 /* Medium specificity */
-.highlight { background-color: yellow; }
+.highlight {
+  background-color: yellow;
+}
 ```
 
 <!-- element class="fragment" -->
 
 **ID Selector:**
+
 <!-- element class="fragment" -->
+
 ```css
 /* Highest specificity */
-#main-title { font-size: 32px; }
+#main-title {
+  font-size: 32px;
+}
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -150,8 +159,6 @@ p { color: black; }
 **How to Add CSS to HTML**
 
 Three methods:
-
-
 
 1. **External Stylesheet** (Recommended)
 
@@ -171,24 +178,28 @@ Three methods:
 _The Professional Way_
 
 **Create a separate CSS file:**
+
 <!-- element class="fragment" -->
 
 ```css
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 ```
 
 <!-- element class="fragment" -->
 
 **Link it in your HTML:**
+
 <!-- element class="fragment" -->
+
 ```html
 <head>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -206,6 +217,7 @@ body {
 <!-- element class="fragment" -->
 
 **Best Practice:** Always use external stylesheets for projects
+
 <!-- element class="fragment" -->
 
 ---
@@ -215,19 +227,21 @@ _Optional - For Small Projects_
 
 ```html
 <head>
-    <style>
-        body {
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: red;
-        }
-    </style>
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: red;
+    }
+  </style>
 </head>
 ```
 
 <!-- element class="fragment" -->
+
 **Use Case:** Quick Prototypes / examples
+
 <!-- element class="fragment" -->
 
 ---
@@ -238,12 +252,8 @@ _Optional - Deprecated/Not Recommended_
 <!-- element class="fragment" -->
 
 ```html
-<h1 style="color: green; font-size: 28px;">
-    Styled Heading
-</h1>
-<p style="background-color: yellow;">
-    Highlighted paragraph
-</p>
+<h1 style="color: green; font-size: 28px;">Styled Heading</h1>
+<p style="background-color: yellow;">Highlighted paragraph</p>
 ```
 
 <!-- element class="fragment" -->
@@ -260,14 +270,15 @@ _Optional - Deprecated/Not Recommended_
 
 ```css
 .text-styling {
-    font-family: 'Arial', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: #333333;
-    line-height: 1.5;
-    text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 1.5;
+  text-align: center;
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -278,27 +289,26 @@ _Optional - Deprecated/Not Recommended_
 
 ```css
 .color-examples {
-    color: red;                    /* Named colors */
-    color: #ff0000;               /* Hex codes */
-    color: rgb(255, 0, 0);        /* RGB values */
-    color: rgba(255, 0, 0, 0.5);  /* RGB with transparency */
+  color: red; /* Named colors */
+  color: #ff0000; /* Hex codes */
+  color: rgb(255, 0, 0); /* RGB values */
+  color: rgba(255, 0, 0, 0.5); /* RGB with transparency */
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 **CSS Properties: Spacing**
 
-
-
 **Margin (Outside spacing):** <!-- element class="fragment" -->
 
 ```css
 .spacing {
-    margin: 20px;           /* All sides */
-    margin-top: 10px;       /* Specific side */
-    margin: 10px 20px;      /* Vertical, Horizontal */
+  margin: 20px; /* All sides */
+  margin-top: 10px; /* Specific side */
+  margin: 10px 20px; /* Vertical, Horizontal */
 }
 ```
 
@@ -308,10 +318,11 @@ _Optional - Deprecated/Not Recommended_
 
 ```css
 .spacing {
-    padding: 15px;
-    padding-left: 25px;
+  padding: 15px;
+  padding-left: 25px;
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -320,27 +331,27 @@ _Optional - Deprecated/Not Recommended_
 
 ```css
 .background-styling {
-    background-color: #f8f9fa;
-    background-image: url('pattern.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-color: #f8f9fa;
+  background-image: url("pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 **CSS Properties: Borders**
 
-
-
 ```css
 .border-styling {
-    border: 2px solid #333;        /* Width, style, color */
-    border-radius: 10px;           /* Rounded corners */
-    border-top: 1px dashed red;    /* Specific side */
+  border: 2px solid #333; /* Width, style, color */
+  border-radius: 10px; /* Rounded corners */
+  border-top: 1px dashed red; /* Specific side */
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -351,12 +362,13 @@ _Optional - Deprecated/Not Recommended_
 
 ```css
 .layout {
-    display: block;        /* Full width */
-    display: inline;       /* Inline with text */
-    display: inline-block; /* Inline but with width/height */
-    display: none;         /* Hidden */
+  display: block; /* Full width */
+  display: inline; /* Inline with text */
+  display: inline-block; /* Inline but with width/height */
+  display: none; /* Hidden */
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -365,13 +377,14 @@ _Optional - Deprecated/Not Recommended_
 
 ```css
 .sizing {
-    width: 300px;          /* Fixed width */
-    width: 50%;            /* Percentage */
-    max-width: 800px;      /* Maximum width */
-    height: 200px;
-    min-height: 100px;
+  width: 300px; /* Fixed width */
+  width: 50%; /* Percentage */
+  max-width: 800px; /* Maximum width */
+  height: 200px;
+  min-height: 100px;
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -387,24 +400,29 @@ _Optional - Deprecated/Not Recommended_
 **Example:**
 
 ```css
-p { color: black; }              /* Specificity: 1 */
-.highlight { color: blue; }      /* Specificity: 10 */
-#main { color: red; }            /* Specificity: 100 */
+p {
+  color: black;
+} /* Specificity: 1 */
+.highlight {
+  color: blue;
+} /* Specificity: 10 */
+#main {
+  color: red;
+} /* Specificity: 100 */
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 **Practical Example**
 
-
-
 **HTML:**
 
 ```html
 <div class="card">
-    <h2 class="card-title">Welcome</h2>
-    <p class="card-content">This is a styled card.</p>
+  <h2 class="card-title">Welcome</h2>
+  <p class="card-content">This is a styled card.</p>
 </div>
 ```
 
@@ -414,18 +432,19 @@ p { color: black; }              /* Specificity: 1 */
 
 ```css
 .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
 }
 
 .card-title {
-    color: #2c3e50;
-    margin-bottom: 10px;
+  color: #2c3e50;
+  margin-bottom: 10px;
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -438,6 +457,7 @@ p { color: black; }              /* Specificity: 1 */
 4. **Comment your code**
 5. **Keep specificity low**
 6. **Test across browsers**
+
 ---
 
 **Resources**

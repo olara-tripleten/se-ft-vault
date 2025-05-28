@@ -1,4 +1,3 @@
-
 #### Software Engineering
 
 Building applications with HTML, CSS, and JavaScript
@@ -10,11 +9,11 @@ Building applications with HTML, CSS, and JavaScript
 Three fundamental layers:
 
 - **The Client** <!-- element class="fragment" -->
-    - The part the end user interacts with <!-- element class="fragment" -->
+  - The part the end user interacts with <!-- element class="fragment" -->
 - **The Server** <!-- element class="fragment" -->
-    - Where the client searches for information<!-- element class="fragment" -->
+  - Where the client searches for information<!-- element class="fragment" -->
 - **The Database** <!-- element class="fragment" -->
-    - Where all the data is stored<!-- element class="fragment" -->
+  - Where all the data is stored<!-- element class="fragment" -->
 
 <!-- element class="fragment" -->
 
@@ -49,7 +48,9 @@ When written properly, it displays information hierarchy in a meaningful way for
 Tags are how we define, display, and structure website content
 
  <!-- element class="fragment" -->
+
 **Open / Closing Tags:**
+
  <!-- element class="fragment" -->
 
 ```html
@@ -59,34 +60,37 @@ Tags are how we define, display, and structure website content
 <!-- element class="fragment" -->
 
 **Self-Closing Tags:**
+
  <!-- element class="fragment" -->
 
 ```html
 <html />
 ```
+
  <!-- element class="fragment" -->
- 
+
 ---
 
 ### Critical Rule: Tags Must Close
 
-
-
 **❌ Incorrect:**
+
 <!-- element class="fragment" -->
+
 ```html
 <tag>
-<another-tag><another-tag>
+  <another-tag><another-tag></another-tag></another-tag
+></tag>
 ```
+
 <!-- element class="fragment" -->
 
-
 **✅ Correct:**
+
 <!-- element class="fragment" -->
 
 ```html
-<img />
-<another-tag></another-tag>
+<img /> <another-tag></another-tag>
 ```
 
 <!-- element class="fragment" -->
@@ -110,10 +114,7 @@ Two main categories:
 
 _Used to group elements_
 
-
-
 **Basic Page Structure:**
-
 
 <!-- element class="fragment" -->
 
@@ -130,19 +131,25 @@ _Used to group elements_
 <!-- element class="fragment" -->
 
 ```html
-<div>     <!-- Generic Block -->
-<article>
-<section>
-<nav>
-<table>
+<div>
+  <!-- Generic Block -->
+  <article>
+    <section>
+      <nav>
+        <table></table>
+      </nav>
+    </section>
+  </article>
+</div>
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 ## Content Tags
 
-_Used to display data_, like paragraphs, images, videos, 
+_Used to display data_, like paragraphs, images, videos,
 
 ---
 
@@ -156,6 +163,7 @@ _Used to display data_, like paragraphs, images, videos,
 <h5>Subtitle 2</h5>
 <h6>Subtitle 3</h6>
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -164,35 +172,38 @@ Text Content Tags
 
 ```html
 <p>Paragraph</p>
-<b>Bold text</b>          
-<i>Italic Text</i>        
-<span>Generic Text</span> 
+<b>Bold text</b>
+<i>Italic Text</i>
+<span>Generic Text</span>
 ```
+
 <!-- element class="fragment" -->
 
 ---
+
 Media Content
+
 ```html
 <!-- This is the one we'll use the most -->
-<img> 
+<img />
 
 <!-- Less used -->
 <video>
-<audio>
+  <audio></audio>
+</video>
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 ## HTML Hierarchy
 
-
 An html file has a sort of hierarchy defined by levels of "nesting"
 
 Best practice: Use **indentation** to show this hierarchy clearly
+
 <!-- element class="fragment" -->
-
-
 
 ---
 
@@ -202,19 +213,18 @@ Best practice: Use **indentation** to show this hierarchy clearly
 <main>
 <section>
 	<div>
-	<p>
-	</p>
-</div>
-<article>
-<h2></h2>
-	<div>
-	<p>
-	</p>
+	<p></p>
 	</div>
-	</article>
+<article>
+	<h2></h2>
+		<div>
+		<p></p>
+	</div>
+</article>
 </section>
 </main>
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -223,19 +233,20 @@ Best practice: Use **indentation** to show this hierarchy clearly
 
 ```html
 <main>
-	<section>
-		<div>
-			<p></p>
-		</div>
-		<article>
-			<h2></h2>
-			<div>
-				<p></p>
-			</div>
-		</article>
-	</section>
+  <section>
+    <div>
+      <p></p>
+    </div>
+    <article>
+      <h2></h2>
+      <div>
+        <p></p>
+      </div>
+    </article>
+  </section>
 </main>
 ```
+
 <!-- element class="fragment" -->
 
 ---
@@ -259,35 +270,34 @@ Most commonly used **Attributes**
 ```html
 <!-- Class applies a group of css styles -->
 <p class="user-description">
+  <!-- id allows you to use a group of css styles -->
+  <!-- But it's most commonly used to enable Javascript -->
+</p>
 
-<!-- id allows you to use a group of css styles -->
-<!-- But it's most commonly used to enable Javascript -->
 <h2 id="user-name">Username</h2>
 
 <!-- 
 	src is the "Path" to the image you want to display 
 -->
-<img src="user-avatar.jpg">
+<img src="user-avatar.jpg" />
 ```
+
 <!-- element class="fragment" -->
 
 ---
+
 A html element can have as many attributes as it needs
+
 ```html
-<img 
-	src="user-avatar.jpg"
-	class="profile-avatar"
-	id="avatar"
->
+<img src="user-avatar.jpg" class="profile-avatar" id="avatar" />
 ```
+
 <!-- element class="fragment" -->
 
 ---
+
 ## Next Steps
-
-
 
 - Practice HTML structure and tags
 - Learn CSS for styling
 - Combine HTML + CSS for complete frontend development
-

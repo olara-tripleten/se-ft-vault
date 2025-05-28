@@ -1,5 +1,6 @@
 ## Index
 - [Sprint-0](./Lectures/Sprint-0/Sprint-0)
+
 - [Sprint-1](./Lectures/Sprint-1/Sprint-1)
 
 ## Get Started
