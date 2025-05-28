@@ -25,12 +25,13 @@
 		font-size: 32px;
 	}
 </style>
-note: This uses some styles to create a more custom layout
+
 ## First Slide
 - Goal 1
 - Goal 2
 - Goal 3
 - Goal 4
+note: This uses some styles to create a more custom layout
 ---
 ## Second Slide
 ---
