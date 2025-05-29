@@ -9,6 +9,9 @@
 		width: auto;
 		text-align: end;
 	}
+	code {
+		text-align: start;
+	}
 	h1 {
 		position: absolute;
 		top: 0px;
@@ -134,17 +137,10 @@ Controlling individual flex items
 ---
 # BEM Methodology
 
-It helps:
+It helps by:
 - Reusable Components
 - Maintainable code structure
 - Clear relationship between CSS classes
----
-# BEM Methodology
-*⚠️ Note* BEM is one of the naming conventions that exist for CSS classes, the most important part about naming conventions is choosing one and sticking to it
-This:
-- Intuitive class names
-- Produces more consistent code
-- Makes it easier to navigate your css code base
 ---
 # BEM Methodology
 
@@ -163,15 +159,18 @@ BEM Syntax example:
 
 .block__element_modifier {}
 ```
+---
 
+**General Naming Rules:**
+- Use lowercase letters
+- Separate words with hyphens: `navigation-bar`
+- Should be meaningful and descriptive
 ---
 # BEM Methodology
 **BEM Block Structure**
 
-The foundation component
-
 **Block** represents a standalone component:
-<!-- element class="fragment" -->
+
 ```css
 .card {
   border: 1px solid #ddd;
@@ -185,19 +184,13 @@ The foundation component
   <!-- Card content -->
 </div>
 ```
+<!-- element class="fragment" -->
 
----
 
-**Block Naming Rules:**
-- Use lowercase letters
-- Separate words with hyphens: `navigation-bar`
-- Should be meaningful and descriptive
 ---
 # BEM Methodology
 
 **BEM Element Structure**
-
-Parts of a block component
 
 **Element** is a part of a block: `block__element`
 <!-- element class="fragment" -->
@@ -216,8 +209,8 @@ Parts of a block component
   color: #666;
 }
 ```
+---
 
-<!-- element class="fragment" -->
 
 ```html
 <div class="card">
@@ -226,7 +219,6 @@ Parts of a block component
   <div class="card__footer">Footer info</div>
 </div>
 ```
-<!-- element class="fragment" -->
 
 ---
 # BEM Methodology
@@ -252,5 +244,34 @@ Variations and states
 <!-- element class="fragment" -->
 
 ---
+Identify BEM Elements / **Menu**
 
-🚧 TODO: Include some examples of BEM being applies/have a guideline for next steps after this lecture
+![[Screenshot 2025-05-29 at 4.47.41 PM.png]]
+---
+Starting code
+```html
+<header>
+	<nav>
+		<ul>
+			<li>
+				<a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+```
+```html
+<main>
+	<h1>Welcome to the Home Page</h1>
+	<p>This is a practice page for BEM modifiers.</p>
+</main>
+```
+note: Jump to vscode and solve the practice
+---
+Identify BEM Elements / Card

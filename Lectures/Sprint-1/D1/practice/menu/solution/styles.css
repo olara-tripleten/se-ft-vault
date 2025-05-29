@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item {
+  margin-right: 20px;
+}
+
+.menu__link {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Styles for modifiers will be applied here */
+.menu__link_active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.menu__item_size_l {
+  font-size: 1.2em;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content__title {
+  color: #333;
+}
+
+.content__text {
+  line-height: 1.5;
+}
