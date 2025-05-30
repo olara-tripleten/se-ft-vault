@@ -1,4 +1,3 @@
-
 <style>
 	* {
 		width: 100%;
@@ -27,10 +26,7 @@
 
 **Understanding File Paths** _Essential concepts for web development_
 
-
 File paths tell your browser where to find resources like images, CSS files, and other HTML pages.
-
-
 
 **Two main types:**
 
@@ -40,7 +36,6 @@ File paths tell your browser where to find resources like images, CSS files, and
 ---
 
 **What is a File Path?** _The roadmap to your files_
-
 
 A file path is like giving directions to find a specific file on your computer or website.
 
@@ -67,16 +62,14 @@ Think of it as your project's address system!
 
 **Absolute Paths** _The complete address_
 
-
-
 An absolute path gives the **complete location** from the root of your website.
 
 <!-- element class="fragment" -->
 
 ```html
 <!-- Absolute path examples -->
-<img src="/images/logo.png" alt="Logo">
-<link rel="stylesheet" href="/css/style.css">
+<img src="/images/logo.png" alt="Logo" />
+<link rel="stylesheet" href="/css/style.css" />
 <a href="/about.html">About Us</a>
 ```
 
@@ -90,15 +83,14 @@ An absolute path gives the **complete location** from the root of your website.
 
 **Relative Paths** _Directions from where you are_
 
-
 A relative path gives directions **from the current file's location**.
 
 <!-- element class="fragment" -->
 
 ```html
 <!-- From index.html in root folder -->
-<img src="./images/logo.png" alt="Logo">
-<link rel="stylesheet" href="./css/style.css">
+<img src="./images/logo.png" alt="Logo" />
+<link rel="stylesheet" href="./css/style.css" />
 <a href="about.html">About Us</a>
 ```
 
@@ -111,8 +103,6 @@ A relative path gives directions **from the current file's location**.
 ---
 
 **Relative Path Navigation** _Moving up and down the folder tree_
-
-
 
 **Same folder:** Just use `./filename`
 
@@ -127,7 +117,7 @@ A relative path gives directions **from the current file's location**.
 <!-- element class="fragment" -->
 
 ```html
-<img src="./images/hero.jpg" alt="Hero">
+<img src="./images/hero.jpg" alt="Hero" />
 ```
 
 <!-- element class="fragment" -->
@@ -162,7 +152,7 @@ project/
 
 ```html
 <!-- From pages/about.html -->
-<img src="../images/logo.png" alt="Logo">
+<img src="../images/logo.png" alt="Logo" />
 ```
 
 <!-- element class="fragment" -->
@@ -179,7 +169,7 @@ project/
 
 ```html
 <!-- From pages/about.html -->
-<img src="./images/logo.png" alt="Logo">
+<img src="./images/logo.png" alt="Logo" />
 ```
 
 <!-- element class="fragment" -->
@@ -188,7 +178,7 @@ project/
 
 ```html
 <!-- From pages/about.html -->
-<img src="../images/logo.png" alt="Logo">
+<img src="../images/logo.png" alt="Logo" />
 ```
 
 <!-- element class="fragment" -->
@@ -200,6 +190,7 @@ project/
 ---
 
 **VSCode Autocomplete Magic** _Let VSCode build paths for you_
+
 >
 
 **Step 1:** Start typing your HTML tag
@@ -220,7 +211,7 @@ project/
 
 **Pro tip:** VSCode automatically adds `../` when needed!
 
-<!-- element class="fragment" --> 
+<!-- element class="fragment" -->
 
 note: Demonstrate
 
@@ -232,7 +223,8 @@ note: Demonstrate
 <img src="| <!-- Cursor here, start typing -->
 ```
 
-**What you'll see:** 
+**What you'll see:**
+
 <!-- element class="fragment" -->
 
 - Folder suggestions appear
@@ -242,10 +234,11 @@ note: Demonstrate
 <!-- element class="fragment" -->
 
 **Result:**
+
 <!-- element class="fragment" -->
 
 ```html
-<img src="./images/logo.png" alt="Logo">
+<img src="./images/logo.png" alt="Logo" />
 ```
 
 <!-- element class="fragment" -->
@@ -281,19 +274,18 @@ note: Demonstrate
 <a href="./about.html">About</a>
 
 <!-- Go into subfolder -->
-<img src="./images/photo.jpg" alt="Photo">
+<img src="./images/photo.jpg" alt="Photo" />
 
 <!-- Go up one level -->
-<link href="../css/style.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet" />
 
 <!-- Go up two levels -->
-<img src="../../images/logo.png" alt="Logo">
+<img src="../../images/logo.png" alt="Logo" />
 ```
 
 ---
 
 **Troubleshooting Broken Links** _When paths don't work_
-
 
 **Check these common issues:**
 
@@ -315,12 +307,9 @@ note: Demonstrate
 
 <!-- element class="fragment" -->
 
-
 ---
 
 **VSCode Tips for File Paths** _Maximize your efficiency_
-
-
 
 **Tip 1:** Use Ctrl+Space to trigger autocomplete manually
 
@@ -355,9 +344,5 @@ note: Demonstrate
 <!-- element class="fragment" -->
 
 - **Test your links** in the browser to catch mistakes early
-
-<!-- element class="fragment" -->
-
-**Master file paths = Master web development!**
 
 <!-- element class="fragment" -->

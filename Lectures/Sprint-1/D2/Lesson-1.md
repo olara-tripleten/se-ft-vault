@@ -24,13 +24,13 @@
 	}
 </style>
 
-**CSS Positioning** 
+**CSS Positioning**
 
 Understanding Element Positioning in Web Layout
 
 ---
 
-**What is CSS Positioning?** 
+**What is CSS Positioning?**
 
 - By default, elements follow the **normal document flow**
 
@@ -54,7 +54,6 @@ Understanding Element Positioning in Web Layout
 }
 ```
 
-
 - Elements appear **in order** as they appear in HTML
 
 <!-- element class="fragment" -->
@@ -64,7 +63,7 @@ Understanding Element Positioning in Web Layout
 <!-- element class="fragment" -->
 
 - Most elements use static positioning by default
- 
+
 <!-- element class="fragment" -->
 
 ---
@@ -78,8 +77,6 @@ Understanding Element Positioning in Web Layout
   left: 30px;
 }
 ```
-
-
 
 - Element **maintains its space** in the document flow
 
@@ -113,12 +110,14 @@ Understanding Element Positioning in Web Layout
   background-color: #ff6b6b;
 }
 ```
+
 ---
 
 Without position: relative
 ![[Screenshot 2025-05-29 at 6.22.33 PM.png]]
 With position relative
 ![[Screenshot 2025-05-29 at 6.23.10 PM.png]]
+
 ---
 
 **Position: Absolute** Positioned relative to nearest positioned ancestor
@@ -216,7 +215,6 @@ With position relative
 }
 ```
 
-
 - Navigation stays at **top of screen** during scroll
 
 <!-- element class="fragment" -->
@@ -244,8 +242,6 @@ With position relative
 }
 ```
 
-
-
 - Only works on **positioned elements** (not static)
 
 <!-- element class="fragment" -->
@@ -262,7 +258,6 @@ With position relative
 
 **Z-Index Stacking Context** Understanding layering rules
 
-
 - Each positioned element creates a **stacking context**
 
 <!-- element class="fragment" -->
@@ -272,22 +267,19 @@ With position relative
 <!-- element class="fragment" -->
 
 - Elements are stacked in this order:
-    1. Background and borders
-    2. Negative z-index elements
-    3. Block-level elements
-    4. Floated elements
-    5. Inline elements
-    6. Positioned elements (z-index: 0)
-    7. Positive z-index elements
-  
-<!-- element class="fragment" -->
+  1. Background and borders
+  2. Negative z-index elements
+  3. Block-level elements
+  4. Floated elements
+  5. Inline elements
+  6. Positioned elements (z-index: 0)
+  7. Positive z-index elements
 
+<!-- element class="fragment" -->
 
 ---
 
 **When to Use Position Absolute** Common use cases and best practices
-
-
 
 **Perfect for:**
 
@@ -300,7 +292,9 @@ With position relative
 <!-- element class="fragment" -->
 
 **Avoid for:**
+
 <!-- element class="fragment" -->
+
 - **Main layout structure** (use flexbox/grid instead)
 - **Responsive design** without careful planning
 - **Content that needs to flow** with other elements
@@ -344,31 +338,43 @@ With position relative
 
 **Common Positioning Mistakes** Avoid these pitfalls
 
-
 **Forgetting positioning context:**
 
 ```css
 /* Wrong - no positioned parent */
-.child { position: absolute; top: 20px; }
+.child {
+  position: absolute;
+  top: 20px;
+}
 
 /* Right - create context */
-.parent { position: relative; }
-.child { position: absolute; top: 20px; }
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 20px;
+}
 ```
 
 <!-- element class="fragment" -->
 
-**Z-index without positioning:** 
+**Z-index without positioning:**
+
 <!-- element class="fragment" -->
 
 ```css
 /* Wrong - z-index ignored */
-.element { z-index: 999; }
+.element {
+  z-index: 999;
+}
 
 /* Right - position required */
-.element { position: relative; z-index: 999; }
+.element {
+  position: relative;
+  z-index: 999;
+}
 ```
-
 
 <!-- element class="fragment" -->
 
@@ -391,8 +397,6 @@ With position relative
 ---
 
 **Positioning Best Practices** Guidelines for effective use
-
-
 
 1. **Use flexbox/grid** for main layout structure
 
@@ -421,7 +425,6 @@ With position relative
 ---
 
 **Key Takeaways** Essential concepts to remember
-
 
 - **Relative:** Offset from normal position, keeps space in flow
 
