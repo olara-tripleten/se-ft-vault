@@ -63,6 +63,7 @@ The `class` attribute groups elements for styling:
 
 - Multiple elements can share the same class
 - Elements can have multiple classes (space-separated)
+- Classes will be introduced in the third chapter in Sprint 0
 
 <!-- element class="fragment" -->
 

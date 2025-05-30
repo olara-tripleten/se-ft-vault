@@ -95,7 +95,7 @@ Step-by-step installation process
 
 Important considerations during setup
 
-- **Add to PATH** - Enable command line access with `code` command
+- **Add to PATH** - Enable command line access with `code` command (macOS only)
 
 <!-- element class="fragment" -->
 
@@ -187,18 +187,24 @@ Essential keyboard shortcuts and workflows
 
 **File Management**:
 
-- `Ctrl+N` - New file
-- `Ctrl+O` - Open file
-- `Ctrl+S` - Save file
-- `Ctrl+Shift+S` - Save as
+```
+- Ctrl+N 				- New file
+- Ctrl+O 				- Open file
+- Ctrl+S 				- Save file
+- Ctrl+Shift+S 			- Save as
+```
 
 <!-- element class="fragment" -->
 
 **Navigation**:
 
-- `Ctrl+P` - Quick file search
-- `Ctrl+Shift+P` - Command palette
-- `Ctrl+`` - Toggle terminal
+```
+Ctrl+P 				- Quick file search
+Ctrl+Shift+P 		- Command palette
+Ctrl+` 				- Toggle terminal
+```
+
+Note: on macOS, `Ctrl` can usually be replaced with `Cmd`. There are exceptions, including the Toggle terminal command, which still uses `Ctrl`.
 
 <!-- element class="fragment" -->
 
@@ -226,6 +232,8 @@ Proper project setup in VSCode
 1. Open terminal/command prompt
 2. Navigate to project folder: `cd path/to/project`
 3. Type: `code .`
+
+Note: You'll learn how to use the command line in Sprint 2.
 
 <!-- element class="fragment" -->
 

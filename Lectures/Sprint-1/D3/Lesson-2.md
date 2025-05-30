@@ -42,17 +42,17 @@
 ---
 ## Opening project on vscode
 Requisites:
-- Have Vscode downloaded
-- Have liveserver extension for vscode downloaded
+- Have VS Code downloaded
+- Have the live-server extension for VS Code downloaded
 - Have reached Chapter 8
 
 ---
-# Opening project on vscode
+# Opening the project on vscode
 Step by Step:
-- Download Starter Kit
-- Move starter-kit's folder into projects folder
-- Open folder on vscode
-- Open html file with Livepreview
+- Download the starter kit
+- Move the starter-kit's folder into your projects folder
+- Open the folder in vscode
+- Open the html file with live-server
 ---
 ## Brief & Checklist
 
@@ -82,8 +82,7 @@ We can also use W3C validation websites
 To deliver the project you need to:
 - Compress the projects folder using `zip`
 - Drag and drop to the platform
-- Delivering with Mac
-https://youtu.be/4WTKOjKrL_k
+- Delivering with Mac https://youtu.be/4WTKOjKrL_k
 - Delivering with Windows https://youtu.be/SqwZs4mwl4A
 
 note: Everything on this lesson should be demonstrated

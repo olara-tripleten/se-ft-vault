@@ -64,14 +64,15 @@ Tags are how we define, display, and structure website content
  <!-- element class="fragment" -->
 
 ```html
-<html />
+<img />
 ```
 
  <!-- element class="fragment" -->
 
 ---
 
-### Critical Rule: Tags Must Close
+### Critical Rule: Tags Must Close in the correct order
+When closing a tag, you must close the last tag that was opened.
 
 **❌ Incorrect:**
 
@@ -79,8 +80,11 @@ Tags are how we define, display, and structure website content
 
 ```html
 <tag>
-  <another-tag><another-tag></another-tag></another-tag
-></tag>
+  <tag2>
+	<tag3>
+	</tag2> <!-- wrong -->
+  </tag3>
+</tag>
 ```
 
 <!-- element class="fragment" -->
@@ -90,7 +94,12 @@ Tags are how we define, display, and structure website content
 <!-- element class="fragment" -->
 
 ```html
-<img /> <another-tag></another-tag>
+<tag>
+  <tag2>
+    <tag3>
+    </tag3> <!-- correct -->
+  </tag2>
+</tag>
 ```
 
 <!-- element class="fragment" -->
@@ -268,12 +277,13 @@ Format: `key="value"`
 Most commonly used **Attributes**
 
 ```html
-<!-- Class applies a group of css styles -->
-<p class="user-description">
-  <!-- id allows you to use a group of css styles -->
-  <!-- But it's most commonly used to enable Javascript -->
-</p>
+<!-- Classes can be applied to multiple elements. -->
+<!-- They let you apply CSS styles to the entire group. -->
+<p class="user-description"></p>
 
+<!-- An id should always be unique. -->
+<!-- You can use it to apply styles to specific elements. -->
+<!-- But it's most commonly used to enable Javascript -->
 <h2 id="user-name">Username</h2>
 
 <!-- 
