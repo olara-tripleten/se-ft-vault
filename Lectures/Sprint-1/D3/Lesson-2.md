@@ -23,7 +23,9 @@
 		font-size: 32px;
 	}
 </style>
+
 ---
+
 ## Library Landing Page Stage-1
 
 - Project Overview <!-- element class="fragment" -->
@@ -31,29 +33,41 @@
 - Review Brief & Checklist
 - Validate HTML & CSS file syntax
 - Project Delivery
+
 ---
+
 ## Overview
+
 - The project is split on 2 stages
 - During this first stage we'll work on the Header section
 - The code needs to be formatted and follow BEM conventions
 - Use semantic HTML
+
 ---
-![[project-header.png]]
----
+
+## ![[project-header.png]]
+
 ## Opening project on vscode
+
 Requisites:
+
 - Have Vscode downloaded
 - Have liveserver extension for vscode downloaded
 - Have reached Chapter 8
 
 ---
+
 # Opening project on vscode
+
 Step by Step:
+
 - Download Starter Kit
 - Move starter-kit's folder into projects folder
 - Open folder on vscode
 - Open html file with Livepreview
+
 ---
+
 ## Brief & Checklist
 
 Some projects will contain detailed briefs, designed to emulate a list of requirements made by a client in a real life scenario.
@@ -61,6 +75,7 @@ Some projects will contain detailed briefs, designed to emulate a list of requir
 For the first couple of sprints, Briefs are in depth sources of information, everything you need to finish the project is found here
 
 ---
+
 ## Brief & Checklist
 
 The checklist works as a way to guarantee we followed the steps correctly. You should always go through the checklist and ensure your code checks all the boxes.
@@ -71,7 +86,7 @@ The checklist works as a way to guarantee we followed the steps correctly. You s
 
 - If the file doesn't format after clicking Format with prettier that means we have an error
 - A red box will show on the lower corner of the VSCode
-We can also use W3C validation websites
+  We can also use W3C validation websites
 - https://validator.w3.org/ -> For HTML validation
 - https://jigsaw.w3.org/css-validator/ -> for css validation
 
@@ -80,10 +95,11 @@ We can also use W3C validation websites
 ## How to deliver the project
 
 To deliver the project you need to:
+
 - Compress the projects folder using `zip`
 - Drag and drop to the platform
 - Delivering with Mac
-https://youtu.be/4WTKOjKrL_k
+  https://youtu.be/4WTKOjKrL_k
 - Delivering with Windows https://youtu.be/SqwZs4mwl4A
 
 note: Everything on this lesson should be demonstrated

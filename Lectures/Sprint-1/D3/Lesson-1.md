@@ -1,5 +1,3 @@
-
-
 <style>
 	* {
 		width: 100%;
@@ -25,7 +23,6 @@
 		font-size: 32px;
 	}
 </style>
-
 
 **Setting up Development Environment** Web Development Fundamentals
 
@@ -157,8 +154,6 @@ Quick and easy extension installation
 
 Understanding the main components
 
-
-
 - **Activity Bar** - Left sidebar with main sections (Explorer, Search, Git, etc.)
 
 <!-- element class="fragment" -->
@@ -176,8 +171,7 @@ Understanding the main components
 <!-- element class="fragment" -->
 
 - **Status Bar** - Bottom bar showing file info, language mode, Git branch
-- 
-<!-- element class="fragment" -->
+- <!-- element class="fragment" -->
 
 ---
 
@@ -327,7 +321,7 @@ Solutions to frequent problems
 - Disable unnecessary extensions
 - Close unused files and folders
 - Restart VSCode
-- 
+
 <!-- element class="fragment" -->
 
 ---
@@ -385,9 +379,5 @@ Key takeaways from this lesson
 <!-- element class="fragment" -->
 
 - **Extensions** enhance VSCode functionality for specific needs
-
-<!-- element class="fragment" -->
-
-**You're now ready to start building amazing web projects!**
 
 <!-- element class="fragment" -->
