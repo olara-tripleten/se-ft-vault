@@ -545,5 +545,3 @@ Your HTML and CSS playground
 - Practice makes perfect!
 
 <!-- element class="fragment" -->
-
-**Happy debugging! 🛠️**

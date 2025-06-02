@@ -1,0 +1,75 @@
+
+/* Base styles */
+body {
+  font-family: Suisse Intl, sans-serif;
+  color: #1A1A1A;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 32px 16px;
+  background-color: #F2F1EE;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: #F2F1EE;
+  margin-top: 32px;
+}
+
+/* Benefits section styles */
+.benefits-container {
+  max-width: 800px;
+  margin: 32px auto;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.benefit-item {
+  background-color: #F2F1EE;
+  border-radius: 12px;
+  padding: 16px;
+  width: calc(50% - 12px);
+  box-sizing: border-box;
+}
+
+.benefit-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #1A1A1A;
+}
+
+.special-benefit {
+  background-color: #FF976B;
+  border: 2px solid #1A1A1A;
+}
