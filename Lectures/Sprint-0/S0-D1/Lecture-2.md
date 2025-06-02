@@ -1,109 +1,121 @@
+# HTML & CSS Fundamentals
+
+<style>
+	* {
+		width: 100%;
+			text-align: start;
+	}
+	.controls{
+		width: auto;
+		text-align: end;
+	}
+	h1 {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		font-size: 24px !important;
+		
+	}
+	h2 {
+		font-size: 48px !important;
+		font-weight: light;
+	}
+	
+	p, li {
+		font-size: 32px;
+	}
+</style>
+
+_Building Web Pages from Structure to Style_
+
 ---
-# CSS 101
-#CSS
----
 
-**CSS: Cascading Style Sheets**
+## HTML 101: The Foundation
 
-_Adding Style to Structure_
+**HyperText Markup Language** defines the **content and structure** of websites.
 
----
+**Two Types of Tags:**
 
-**Quick HTML Review**
+- **Open/Closing:** `<html></html>`
+- **Self-Closing:** `<img />`
 
-Before diving into CSS, let's cover some essential HTML attributes we'll need:
-
-- **id** attribute - Unique identifier
-- **class** attribute - Grouping elements
-- **Common HTML elements** we'll be styling
-
-<!-- element class="fragment" -->
-
----
-
-**HTML Attributes: id**
-
-The `id` attribute creates a **unique identifier** for an element:
+**Critical Rule:** Tags must close in correct order (last opened, first closed)
 
 ```html
-<h1 id="main-title">Welcome to My Site</h1>
-<div id="navigation">Menu content</div>
-<p id="intro-paragraph">Introduction text</p>
+<!-- ✅ Correct -->
+<div>
+  <p>
+    <span>Text</span>
+  </p>
+</div>
 ```
 
-<!-- element class="fragment" -->
+---
+
+## HTML Tag Categories
+
+**Structural Tags** (group elements):
+
+```html
+<header></header>
+<main>
+  <section>
+    <article></article>
+  </section>
+</main>
+<footer></footer>
+```
+
+**Content Tags** (display data):
+
+```html
+<h1>Main Title</h1>
+<h2>Section Title</h2>
+<p>Paragraph text</p>
+<img src="image.jpg" />
+```
+
+---
+
+## HTML Attributes
+
+Format: `key="value"`
+
+**Essential Attributes:**
+
+```html
+<!-- Class: Groups elements for styling -->
+<p class="highlight">Important text</p>
+
+<!-- ID: Unique identifier -->
+<h2 id="main-title">Unique heading</h2>
+
+<!-- Src: Image path -->
+<img src="photo.jpg" class="profile" id="avatar" />
+```
 
 **Rules:**
 
-<!-- element class="fragment" -->
-
-- Each `id` must be unique on the page
-- Used for specific targeting in CSS and JavaScript
-
-<!-- element class="fragment" -->
+- IDs must be unique per page
+- Classes can be shared across elements
+- Elements can have multiple attributes
 
 ---
 
-**HTML Attributes: class**
+## CSS: Adding Style to Structure
 
-The `class` attribute groups elements for styling:
+**CSS (Cascading Style Sheets)** controls visual presentation.
 
-```html
-<p class="highlight">Important paragraph</p>
-<p class="highlight">Another important paragraph</p>
-<div class="card">Content in a card</div>
-<div class="card featured">Featured card</div>
-```
-
-<!-- element class="fragment" -->
-
-**Rules:**
-
-<!-- element class="fragment" -->
-
-- Multiple elements can share the same class
-- Elements can have multiple classes (space-separated)
-- Classes will be introduced in the third chapter in Sprint 0
-
-<!-- element class="fragment" -->
-
----
-
-**What is CSS?**
-
-**CSS (Cascading Style Sheets)** controls the visual presentation of HTML elements
-
-<!-- element class="fragment" -->
-
-CSS defines:
-
-<!-- element class="fragment" -->
-
-- Colors and fonts
-- Layout and spacing
-- Animations and effects
-- Responsive design
-
-<!-- element class="fragment" -->
-
----
-
-**CSS Syntax**
-
-CSS uses **selectors** and **declarations**:
+**Syntax:**
 
 ```css
 selector {
   property: value;
-  another-property: another-value;
+  another-property: value;
 }
 ```
 
-<!-- element class="fragment" -->
-
 **Example:**
-
-<!-- element class="fragment" -->
 
 ```css
 h1 {
@@ -112,88 +124,30 @@ h1 {
 }
 ```
 
-<!-- element class="fragment" -->
+---
+
+## CSS Selectors & Specificity
+
+**From Lowest to Highest Specificity:**
+
+```css
+/* Element Selector - Specificity: 1 */
+p { color: black; }
+
+/* Class Selector - Specificity: 10 */
+.highlight { background-color: yellow; }
+
+/* ID Selector - Specificity: 100 */
+#main-title { font-size: 32px; }
+```
+
+Higher specificity wins when styles conflict.
 
 ---
 
-**CSS Selectors And specificity**
+## Adding CSS to HTML
 
-**Element Selector:**
-
-```css
-/* Lowest specificity */
-p {
-  color: black;
-}
-```
-
-<!-- element class="fragment" -->
-
-**Class Selector:**
-
-<!-- element class="fragment" -->
-
-```css
-/* Medium specificity */
-.highlight {
-  background-color: yellow;
-}
-```
-
-<!-- element class="fragment" -->
-
-**ID Selector:**
-
-<!-- element class="fragment" -->
-
-```css
-/* Highest specificity */
-#main-title {
-  font-size: 32px;
-}
-```
-
-<!-- element class="fragment" -->
-
----
-
-**How to Add CSS to HTML**
-
-Three methods:
-
-1. **External Stylesheet** (Recommended)
-
-<!-- element class="fragment" -->
-
-2. **Internal Styles** (Optional)
-
-<!-- element class="fragment" -->
-
-3. **Inline Styles** (Optional)
-
-<!-- element class="fragment" -->
-
----
-
-**Method 1: External Stylesheet**  
-_The Professional Way_
-
-**Create a separate CSS file:**
-
-<!-- element class="fragment" -->
-
-```css
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
-}
-```
-
-<!-- element class="fragment" -->
-
-**Link it in your HTML:**
-
-<!-- element class="fragment" -->
+**1. External Stylesheet (Recommended):**
 
 ```html
 <head>
@@ -201,272 +155,134 @@ body {
 </head>
 ```
 
-<!-- element class="fragment" -->
-
----
-
-**Why External Stylesheets?**
-
-**Benefits:**
-
-- Separation of concerns <!-- element class="fragment" -->
-- Reusable across multiple pages <!-- element class="fragment" -->
-- Easier maintenance <!-- element class="fragment" -->
-- Better organization <!-- element class="fragment" -->
-- Faster loading (caching) <!-- element class="fragment" -->
-
-<!-- element class="fragment" -->
-
-**Best Practice:** Always use external stylesheets for projects
-
-<!-- element class="fragment" -->
-
----
-
-**Method 2: Internal Styles**  
-_Optional - For Small Projects_
+**2. Internal Styles (Quick prototypes):**
 
 ```html
 <head>
   <style>
-    body {
-      background-color: #f0f0f0;
-    }
-    h1 {
-      color: red;
-    }
+    body { background-color: #f0f0f0; }
   </style>
 </head>
 ```
 
-<!-- element class="fragment" -->
-
-**Use Case:** Quick Prototypes / examples
-
-<!-- element class="fragment" -->
-
----
-
-**Method 3: Inline Styles**  
-_Optional - Deprecated/Not Recommended_
-
-<!-- element class="fragment" -->
+**3. Inline Styles (Last resort):**
 
 ```html
-<h1 style="color: green; font-size: 28px;">Styled Heading</h1>
-<p style="background-color: yellow;">Highlighted paragraph</p>
+<h1 style="color: green;">Styled Heading</h1>
 ```
-
-<!-- element class="fragment" -->
-
-**When to Use:** when it's the only option
-
-<!-- element class="fragment" -->
 
 ---
 
-**CSS Properties: Typography**
+## Essential CSS Properties
 
-<!-- element class="fragment" -->
+**Typography:**
 
 ```css
-.text-styling {
-  font-family: "Arial", sans-serif;
+.text {
+  font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  color: #333333;
-  line-height: 1.5;
+  color: #333;
   text-align: center;
 }
 ```
 
-<!-- element class="fragment" -->
-
----
-
-**CSS Properties: Colors**
-
-**Different Color Formats:**
+**Colors:**
 
 ```css
-.color-examples {
-  color: red; /* Named colors */
-  color: #ff0000; /* Hex codes */
-  color: rgb(255, 0, 0); /* RGB values */
-  color: rgba(255, 0, 0, 0.5); /* RGB with transparency */
+.colors {
+  color: red;           /* Named */
+  color: #ff0000;       /* Hex */
+  color: rgb(255,0,0);  /* RGB */
+  color: rgba(255,0,0,0.5); /* Transparent */
 }
 ```
 
-<!-- element class="fragment" -->
-
 ---
 
-**CSS Properties: Spacing**
+## Spacing & Layout
 
-**Margin (Outside spacing):** <!-- element class="fragment" -->
+**Spacing:**
 
 ```css
 .spacing {
-  margin: 20px; /* All sides */
-  margin-top: 10px; /* Specific side */
-  margin: 10px 20px; /* Vertical, Horizontal */
+  margin: 20px;      /* Outside spacing */
+  padding: 15px;     /* Inside spacing */
+  margin-top: 10px;  /* Specific sides */
 }
 ```
 
-<!-- element class="fragment" -->
-
-**Padding (Inside spacing):** <!-- element class="fragment" -->
-
-```css
-.spacing {
-  padding: 15px;
-  padding-left: 25px;
-}
-```
-
-<!-- element class="fragment" -->
-
----
-
-**CSS Properties: Background**
-
-```css
-.background-styling {
-  background-color: #f8f9fa;
-  background-image: url("pattern.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-```
-
-<!-- element class="fragment" -->
-
----
-
-**CSS Properties: Borders**
-
-```css
-.border-styling {
-  border: 2px solid #333; /* Width, style, color */
-  border-radius: 10px; /* Rounded corners */
-  border-top: 1px dashed red; /* Specific side */
-}
-```
-
-<!-- element class="fragment" -->
-
----
-
-**Basic Layout with CSS**
-
-**Display Property:**
+**Layout:**
 
 ```css
 .layout {
-  display: block; /* Full width */
-  display: inline; /* Inline with text */
-  display: inline-block; /* Inline but with width/height */
-  display: none; /* Hidden */
+  display: block;        /* Full width */
+  display: inline-block; /* Inline with dimensions */
+  width: 50%;           /* Responsive width */
+  max-width: 800px;     /* Maximum constraint */
 }
 ```
 
-<!-- element class="fragment" -->
-
 ---
 
-**Width and Height**
+## Borders & Backgrounds
+
+**Borders:**
 
 ```css
-.sizing {
-  width: 300px; /* Fixed width */
-  width: 50%; /* Percentage */
-  max-width: 800px; /* Maximum width */
-  height: 200px;
-  min-height: 100px;
+.styled {
+  border: 2px solid #333;
+  border-radius: 10px;  /* Rounded corners */
 }
 ```
 
-<!-- element class="fragment" -->
-
----
-
-**CSS Cascade and Specificity**
-**Specificity Order (highest to lowest):**
-
-1. Inline styles
-2. IDs
-3. Classes
-4. Elements
-
-**Example:**
+**Backgrounds:**
 
 ```css
-p {
-  color: black;
-} /* Specificity: 1 */
-.highlight {
-  color: blue;
-} /* Specificity: 10 */
-#main {
-  color: red;
-} /* Specificity: 100 */
+.background {
+  background-color: #f8f9fa;
+  background-image: url("pattern.png");
+  background-size: cover;
+}
 ```
-
-<!-- element class="fragment" -->
 
 ---
 
-**Practical Example**
+## Practical Example
+
+note: Open Vscode on the index.html and styles.css
+
+---
+
+## Best Practices
 
 **HTML:**
 
-```html
-<div class="card">
-  <h2 class="card-title">Welcome</h2>
-  <p class="card-content">This is a styled card.</p>
-</div>
-```
+- Use proper indentation for hierarchy
+- Close tags in correct order
+- Use semantic elements (`<header>`, `<main>`, `<article>`)
 
-<!-- element class="fragment" -->
+**CSS:**
 
-**CSS:** <!-- element class="fragment" -->
-
-```css
-.card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 10px;
-}
-
-.card-title {
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
-```
-
-<!-- element class="fragment" -->
+- Use external stylesheets
+- Organize related styles together
+- Use meaningful class names
+- Keep specificity low
+- Comment complex code
 
 ---
 
-**CSS Best Practices**
+## Key Takeaways
 
-1. **Use external stylesheets**
-2. **Organize your CSS** (group related styles)
-3. **Use meaningful class names**
-4. **Comment your code**
-5. **Keep specificity low**
-6. **Test across browsers**
+1. **HTML** provides structure and content
+2. **CSS** provides visual styling
+3. **Separation of concerns** - keep structure and style separate
+4. **Specificity matters** - IDs > Classes > Elements
+5. **External stylesheets** are the professional standard
+6. **Practice makes perfect** - start simple, add complexity gradually
 
----
+**Essential Resources:**
 
-**Resources**
-
-**Essential References:**
-
-- [MDN CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web)
 - [CSS-Tricks](https://css-tricks.com/)
-- [Can I Use](https://caniuse.com/) - Browser compatibility
-
-**Practice:** Start with simple styling and gradually add complexity
+- [Can I Use](https://caniuse.com/) for browser compatibility
