@@ -1,32 +1,89 @@
+<style>
+	* {
+		width: 100%;
+			text-align: start;
+	}
+	.controls{
+		width: auto;
+		text-align: end;
+	}
+	h1 {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		font-size: 24px !important;
+		
+	}
+	h2 {
+		font-size: 48px !important;
+		font-weight: light;
+	}
+	
+	p, li {
+		font-size: 32px;
+	}
+</style>
+
 #### Software Engineering
 
-Building applications with HTML, CSS, and JavaScript
+Introduction to tripletens platform(https://tripleten.com)
+- Dashboard <!-- element class="fragment" -->
+- Sprints <!-- element class="fragment" -->
+- Chapters <!-- element class="fragment" -->
+- Tasks <!-- element class="fragment" -->
+
+Note: This will be after orientation
+
+---
+Your dashboard:
+
+![[platform-dashboard.png]]
+---
+
+Current Sprint
+
+![[platform-current-chapter.png]]
+---
+Sprints
+
+![[platform-sprints.png]]
+---
+
+Sprint chapters:
+
+![[platform-sprint-details.png]]
+---
+Theory Vs Practice
+
+![[platform-sprint-chapter.png]]
 
 ---
 
-### Web Application Architecture
+Theory
 
-Three fundamental layers:
-
-- **The Client** <!-- element class="fragment" -->
-  - The part the end user interacts with <!-- element class="fragment" -->
-- **The Server** <!-- element class="fragment" -->
-  - Where the client searches for information<!-- element class="fragment" -->
-- **The Database** <!-- element class="fragment" -->
-  - Where all the data is stored<!-- element class="fragment" -->
-
-<!-- element class="fragment" -->
-
-_Note: This is an oversimplification, but helpful for understanding_
+![[platform-lesson-theory.png]]
+---
+Practice
+![[platform-lesson-practice.png]]
+---
+Support & Dot
+![[platform-lesson-practice 1.png]]
+note:   
 
 ---
+Main sections
 
-### Starting with Frontend
+![[platform-lesson-practice-grid.png]]
+---
+Hints & Theory
 
-We begin on the **Client Side** (frontend) using **HTML** and **CSS**
+![[platform-lesson-theory&hints.png]]
 
 ---
+Actions
 
+![[platform-lesson-actions.png]]
+---
 # HTML 101
 
 _HyperText Markup Language_
