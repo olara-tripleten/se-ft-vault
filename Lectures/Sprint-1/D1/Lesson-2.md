@@ -29,107 +29,6 @@
 	}
 </style>
 
-## Flexbox & BEM
-- Revisit flexbox concepts
-- BEM naming convention
-note: This uses some styles to create a more custom layout
----
-# Flexbox
-## **Fundamentals Review**
-
-Core properties that control flex container behavior
-
-flex-direction: Controls the main axis direction <!-- element class="fragment" -->
-
-justify-content: Aligns items along the main axis <!-- element class="fragment" -->
-
-align-items: Aligns items along the cross axis <!-- element class="fragment" -->
-
----
-
-# Flexbox
-
-Essential properties for flex containers
-```css
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-```
-```css
-.flex-container {
-  flex-wrap: wrap;
-  align-content: space-between;
-  gap: 1rem;
-}
-```
-<!-- element class="fragment" -->
-
----
-# Flexbox
-**Flex Item Properties**
-
-Controlling individual flex items
-
-```css
-.flex-item {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 200px;
-}
-```
-
-
-
-**Shorthand syntax:**
-<!-- element class="fragment" -->
-```css
-.flex-item {
-  flex: 1 0 200px; /* grow shrink basis */
-}
-```
-
-<!-- element class="fragment" -->
-
----
-# Flexbox
-
-**Flex Item Common patterns**
-
-- `flex: 1` - Equal distribution 
-- `flex: 0 0 auto` - No grow/shrink, natural size
-
----
-# Flexbox
-**Practical Flexbox Example**
-
-
-```html
-<nav class="navbar">
-  <div class="navbar__logo">Brand</div>
-  <ul class="navbar__menu">
-    <li class="navbar__item">Home</li>
-    <li class="navbar__item">About</li>
-    <li class="navbar__item">Contact</li>
-  </ul>
-</nav>
-```
-
-<!-- element class="fragment" -->
-
-```css
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-```
-<!-- element class="fragment" -->
-
----
 
 ## BEM Methodology
 ***B***lock - ***E***lement - ***M***odifier
@@ -211,7 +110,6 @@ BEM Syntax example:
 ```
 ---
 
-
 ```html
 <div class="card">
   <div class="card__header">Card Title</div>
@@ -244,6 +142,25 @@ Variations and states
 <!-- element class="fragment" -->
 
 ---
+# BEM Methodology
+**BEM Modifier Structure**
+
+Variations and states
+If a modifier has several variations we should use:
+
+```css
+.button {
+	/* Base class */
+}
+
+.button_type_primary {}
+
+.button_type_danger {}
+
+.button_type_large {}
+```
+
+---
 Identify BEM Elements / **Menu**
 
 ![[Screenshot 2025-05-29 at 4.47.41 PM.png]]
@@ -274,4 +191,9 @@ Starting code
 ```
 note: Jump to vscode and solve the practice
 ---
-Identify BEM Elements / Card
+# BEM
+
+## Common BEM Errors
+- An element can never be placed outside the corresponding block.
+- A modifier can't be used on an HTML element without also including the thing it modifies.
+- A modifier should only store the styles that are actually being _modified_. 
