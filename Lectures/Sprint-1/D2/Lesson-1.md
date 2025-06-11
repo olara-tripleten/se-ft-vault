@@ -28,6 +28,8 @@
 
 Understanding Element Positioning in Web Layout
 
+note: You can use the [practice example](./practice/positioning/index.html) to demonstrate while you go over the lesson in general
+
 ---
 
 **What is CSS Positioning?**
