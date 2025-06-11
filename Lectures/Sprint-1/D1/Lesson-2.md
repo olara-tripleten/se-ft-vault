@@ -1,5 +1,3 @@
-
-
 <style>
 	* {
 		width: 100%;
@@ -29,43 +27,59 @@
 	}
 </style>
 
-
 ## BEM Methodology
-***B***lock - ***E***lement - ***M***odifier
+
+**_B_**lock - **_E_**lement - **_M_**odifier
 
 ---
+
 # BEM Methodology
 
 It helps by:
+
 - Reusable Components
 - Maintainable code structure
 - Clear relationship between CSS classes
+
 ---
+
 # BEM Methodology
 
 The BEM structure
+
 - **Block**: Stand alone component
 - Element: Part of a block
 - Modifier: Variation of block/element
+
 ---
+
 # BEM Methodology
 
 BEM Syntax example:
+
 ```css
-.block {}
+.block {
+}
 
-.block__element {}
+.block__element {
+}
 
-.block__element_modifier {}
+.block__element_modifier {
+}
 ```
+
 ---
 
 **General Naming Rules:**
+
 - Use lowercase letters
 - Separate words with hyphens: `navigation-bar`
 - Should be meaningful and descriptive
+
 ---
+
 # BEM Methodology
+
 **BEM Block Structure**
 
 **Block** represents a standalone component:
@@ -83,15 +97,17 @@ BEM Syntax example:
   <!-- Card content -->
 </div>
 ```
+
 <!-- element class="fragment" -->
 
-
 ---
+
 # BEM Methodology
 
 **BEM Element Structure**
 
 **Element** is a part of a block: `block__element`
+
 <!-- element class="fragment" -->
 
 ```css
@@ -108,6 +124,7 @@ BEM Syntax example:
   color: #666;
 }
 ```
+
 ---
 
 ```html
@@ -119,17 +136,21 @@ BEM Syntax example:
 ```
 
 ---
+
 # BEM Methodology
+
 **BEM Modifier Structure**
 
 Variations and states
 
 **Modifier** changes appearance or behavior: `block_modifier` or `block__element_modifier`
+
 <!-- element class="fragment" -->
+
 ```css
 .card_featured {
   border-color: #007bff;
-  box-shadow: 0 4px 8px rgba(0,123,255,0.3);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
 }
 .card_large {
   padding: 2rem;
@@ -139,10 +160,13 @@ Variations and states
   text-align: center;
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
+
 # BEM Methodology
+
 **BEM Modifier Structure**
 
 Variations and states
@@ -150,50 +174,60 @@ If a modifier has several variations we should use:
 
 ```css
 .button {
-	/* Base class */
+  /* Base class */
 }
 
-.button_type_primary {}
+.button_type_primary {
+}
 
-.button_type_danger {}
+.button_type_danger {
+}
 
-.button_type_large {}
+.button_type_large {
+}
 ```
 
 ---
+
 Identify BEM Elements / **Menu**
 
-![[Screenshot 2025-05-29 at 4.47.41 PM.png]]
----
+## ![[Screenshot 2025-05-29 at 4.47.41 PM.png]]
+
 Starting code
+
 ```html
 <header>
-	<nav>
-		<ul>
-			<li>
-				<a href="#">Home</a>
-			</li>
-			<li>
-				<a href="#">About</a>
-			</li>
-			<li>
-				<a href="#">Contact</a>
-			</li>
-		</ul>
-	</nav>
+  <nav>
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
 </header>
 ```
+
 ```html
 <main>
-	<h1>Welcome to the Home Page</h1>
-	<p>This is a practice page for BEM modifiers.</p>
+  <h1>Welcome to the Home Page</h1>
+  <p>This is a practice page for BEM modifiers.</p>
 </main>
 ```
-note: Jump to vscode and solve the practice
----
+
+## note: Jump to vscode and solve the practice
+
 # BEM
 
 ## Common BEM Errors
+
 - An element can never be placed outside the corresponding block.
 - A modifier can't be used on an HTML element without also including the thing it modifies.
-- A modifier should only store the styles that are actually being _modified_. 
+- A modifier should only store the styles that are actually being _modified_.
+
+note: Given that the lecture is rather short, I created a small project where the idea is to refactor an [HTML file to use semantic selectors and BEM](./practice/bem-refactor/index.html)
