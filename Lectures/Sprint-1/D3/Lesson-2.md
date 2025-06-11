@@ -252,7 +252,6 @@ note: Demonstrate
 **Use Relative Paths when:**
 
 - Linking to files within your project
-- Building a website that might move locations
 - Working on local development
 
 <!-- element class="fragment" -->
@@ -260,7 +259,6 @@ note: Demonstrate
 **Use Absolute Paths when:**
 
 - Linking to external resources
-- Working with a fixed website structure
 - Referencing files from the root level
 
 ---
