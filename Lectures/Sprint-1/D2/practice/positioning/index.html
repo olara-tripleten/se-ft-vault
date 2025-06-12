@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth-scroll">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Examples</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <!-- Fixed Navigation Bar -->
+    <div class="navbar">
+      <div class="navbar__brand">CSS Position Examples</div>
+    </div>
+
+    <!-- Sticky Notification -->
+    <div class="notification_sticky">
+      📌 This notification bar is sticky and follows you as you scroll!
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="content__title">Understanding CSS Position Properties</div>
+
+      <div class="examples">
+        <!-- Position: Static -->
+        <div class="card">
+          <div class="card__title">Position: Static (Default)</div>
+          <div class="card__description">
+            Elements follow normal document flow. This is the default
+            positioning.
+          </div>
+          <div class="flow_static">
+            <div class="flow__box">Box 1</div>
+            <div class="flow__box">Box 2</div>
+            <div class="flow__box">Box 3</div>
+          </div>
+        </div>
+
+        <!-- Position: Relative -->
+        <div class="card">
+          <div class="card__title">Position: Relative</div>
+          <div class="card__description">
+            Element offset from its normal position. Commonly used for slight
+            adjustments.
+          </div>
+          <div class="container_relative">
+            <div>Normal position would be here</div>
+            <div class="image_offset">Offset Image</div>
+          </div>
+        </div>
+
+        <!-- Position: Absolute -->
+        <div class="card">
+          <div class="card__title">Position: Absolute</div>
+          <div class="card__description">
+            Positioned relative to nearest positioned ancestor. Perfect for
+            notification badges.
+          </div>
+          <div style="text-align: center; padding: 20px">
+            <div class="button__container">
+              <button class="button">Messages</button>
+              <div class="button__badge">3</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Position: Absolute - Overlay -->
+        <div class="card">
+          <div class="card__title">Position: Absolute - Overlay</div>
+          <div class="card__description">
+            Absolute positioning for text overlay on images.
+          </div>
+          <div style="display: flex; justify-content: center">
+            <div class="media">
+              <div class="media__overlay">Overlay Text</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Position: Fixed -->
+        <div class="card">
+          <div class="card__title">Position: Fixed</div>
+          <div class="card__description">
+            Fixed relative to viewport. See the navbar above and the "back to
+            top" button.
+          </div>
+          <div style="text-align: center; padding: 20px; color: #666666">
+            <div>The navbar above is fixed to the top</div>
+            <div>Look for the floating button in the bottom-right corner!</div>
+          </div>
+        </div>
+
+        <!-- Position: Sticky -->
+        <div class="card">
+          <div class="card__title">Position: Sticky</div>
+          <div class="card__description">
+            Switches between relative and fixed based on scroll position. See
+            the orange notification bar above.
+          </div>
+          <div style="text-align: center; padding: 20px; color: #666666">
+            <div>The orange notification bar is sticky</div>
+            <div>It sticks to the top when you scroll past it</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fixed Back to Top Button -->
+    <button
+      class="scroll-button_to-top"
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+    >
+      ↑
+    </button>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer__text">
+        © 2024 CSS Position Examples - Demonstrating positioning in action
+      </div>
+    </div>
+  </body>
+</html>

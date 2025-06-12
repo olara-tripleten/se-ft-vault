@@ -24,13 +24,13 @@
 	}
 </style>
 
-**Welcome to CSS Mastery** Borders, Box-Sizing, and Responsible AI Learning
+**Welcome to CSS Mastery** Borders, shorthands, devtools recap
 
 Today we'll explore:
 
 - Advanced CSS border techniques <!-- element class="fragment" -->
-- Box-sizing fundamentals for predictable layouts <!-- element class="fragment" -->
-- Responsible AI integration in your learning journey
+- Shorthands <!-- element class="fragment" -->
+- Re-visit Devtools
 <!-- element class="fragment" -->
 
 ---
@@ -126,91 +126,233 @@ Transform rectangles into circles, pills, and custom shapes
 
 ---
 
-**The Box Model Challenge** Understanding the default behavior
+# CSS Shorthands
+
+_Writing Less, Achieving More_
+
+---
+
+## What are CSS Shorthands?
+
+**Shorthand properties** let you set multiple related CSS properties with a single declaration.
+
+**Benefits:**
+
+- Less code to write
+- Faster to read
+- Easier maintenance
+- Cleaner stylesheets
+---
+**Example:**
 
 ```css
-.default-box {
-  width: 200px;
-  height: 100px;
-  padding: 20px;
-  border: 5px solid #333;
-  margin: 10px;
-}
+/* Instead of this: */
+margin-top: 10px;
+margin-right: 20px;
+margin-bottom: 10px;
+margin-left: 20px;
+
+/* Write this: */
+margin: 10px 20px;
 ```
 
-**Total width**: 200px + 20px + 20px + 5px + 5px = 250px
+---
+
+## Essential Shorthands: Spacing
+
+**Margin & Padding Shorthand:**
+
+```css
+/* 4 values: top right bottom left (clockwise) */
+margin: 10px 15px 20px 5px;
+
+/* 3 values: top horizontal bottom */
+margin: 10px 15px 20px;
+
+/* 2 values: vertical horizontal */
+margin: 10px 20px;
+
+/* 1 value: all sides */
+margin: 15px;
+
+/* Same pattern applies to padding */
+padding: 10px 20px;
+```
+
+**Memory Tip:** Think of a clock - start at 12 and go clockwise!
+
+---
+
+## Essential Shorthands: Borders & Backgrounds
+
+**Border Shorthand:**
+
+```css
+/* width | style | color */
+border: 2px solid #333;
+border-top: 1px dashed red;
+
+/* Individual borders */
+border-left: 3px solid blue;
+```
+---
+**Background Shorthand:**
+
+```css
+/* color | image | repeat | position | size */
+background: #fff url('bg.jpg') no-repeat center/cover;
+
+/* Common patterns: */
+background: #f0f0f0;
+background: url('image.png') center/contain;
+```
+---
+**Font Shorthand:**
+
+```css
+/* style | weight | size/line-height | family */
+font: italic bold 16px/1.5 Arial, sans-serif;
+
+/* Simplified: */
+font: 18px Georgia, serif;
+```
+
+---
+
+## Quick Reference & Best Practices
+
+**Most Used Shorthands:**
+
+```css
+/* Spacing (use constantly) */
+margin: 20px auto;     /* Center horizontally */
+padding: 10px 15px;    /* Vertical | Horizontal */
+
+/* Borders (very common) */
+border: 1px solid #ddd;
+border-radius: 8px;    /* Rounded corners */
+
+/* Backgrounds (frequently used) */
+background: #fff;
+background: url('img.jpg') center/cover;
+
+/* Typography (common) */
+font: 16px/1.4 Arial, sans-serif;
+```
+---
+**Pro Tips:**
+
+- Start with the most common 2-value patterns: `margin: 10px 20px`
+- Use `margin: 0 auto` to center elements
+- Always specify border style: `border: 1px solid #ccc`
+- Remember: shorthands reset unspecified values to defaults
+
+**Practice:** Use shorthands for cleaner, more professional CSS!
+
+---
+**Modifying HTML in Real-Time** Edit structure on the fly
+
+**Edit text content:**
+
+- Double-click on text in the DOM tree
+- Type new content
+- Press Enter to apply changes
 
 <!-- element class="fragment" -->
 
-This unpredictable sizing causes layout headaches!
+---
+**Edit HTML attributes:**
+
+- Double-click on attribute values
+- Modify href, src, class, id, etc.
+- Changes apply immediately
+
+<!-- element class="fragment" -->
+
+---
+**Add new elements:**
+
+- Right-click on parent element
+- Select "Edit as HTML"
+- Add your HTML code
 
 <!-- element class="fragment" -->
 
 ---
 
-**Box-Sizing: Content-Box** The default (and problematic) behavior
+**The Styles Panel** Your CSS control center
 
-```css
-.content-box {
-  box-sizing: content-box; /* default */
-  width: 200px;
-  padding: 20px;
-  border: 5px solid #333;
-}
-```
+**Computed styles:**
 
-- Width applies only to content area <!-- element class="fragment" -->
-- Padding and borders add to total size <!-- element class="fragment" -->
-- Makes responsive design challenging <!-- element class="fragment" -->
-
----
-
-**Box-Sizing: Border-Box** The solution for predictable layouts
-
-```css
-.border-box {
-  box-sizing: border-box;
-  width: 200px;
-  padding: 20px;
-  border: 5px solid #333;
-}
-```
-
-- Width includes content, padding, AND borders <!-- element class="fragment" -->
-- Total width remains exactly 200px <!-- element class="fragment" -->
-- Content area shrinks to accommodate padding/borders <!-- element class="fragment" -->
-
----
-
-**Global Box-Sizing Reset** The modern standard approach
-
-```css
-/* Universal selector approach */
-* {
-  box-sizing: border-box;
-}
-```
-
-Set once, benefit everywhere in your stylesheet
+- Shows final calculated values
+- Includes inherited properties
+- Useful for understanding cascading
 
 <!-- element class="fragment" -->
 
 ---
+**Applied rules:**
 
-**Visual Debugging Borders** Developer tools for layout understanding
+- Shows all CSS rules affecting the element
+- Ordered by specificity (most specific first)
+- Inline styles appear at the top
 
-```css
-/* Temporary debugging borders */
-* {
-  border: 1px solid red;
-}
+<!-- element class="fragment" -->
 
-/* More subtle approach */
-.debug {
-  outline: 1px solid rgba(255, 0, 0, 0.5);
-}
-```
+---
+**Override indicators:**
 
-Quickly visualize element boundaries during development
+- Crossed-out properties are overridden
+- Grayed-out properties are inactive
+- Click checkboxes to enable/disable rules
+<!-- element class="fragment" -->
+
+---
+
+**Modifying CSS Styles** Real-time style editing
+
+**Edit existing properties:**
+
+- Click on any CSS property value
+- Type new values
+- Press Tab to move to next property
+- Press Enter to add new property
+
+<!-- element class="fragment" -->
+
+---
+**Add new properties:**
+
+- Click in empty space within a CSS rule
+- Type property name and value
+- Use auto-complete suggestions
+
+<!-- element class="fragment" -->
+
+---
+**Create new CSS rules:**
+
+- Click the "+" icon in Styles panel
+- Creates new rule for selected element
+- Add properties as needed
+<!-- element class="fragment" -->
+---
+<!-- element class="fragment" -->
+
+**Developer Tools are essential for:**
+
+- Learning how websites work
+- Debugging HTML and CSS issues
+- Testing responsive designs
+- Experimenting with new techniques
+
+<!-- element class="fragment" -->
+
+**Remember:**
+
+- Changes in DevTools are temporary
+- Use right-click → Inspect for quick access
+- The Styles panel shows rule specificity
+- Practice makes perfect!
 
 <!-- element class="fragment" -->

@@ -33,6 +33,7 @@ p, li {
 - Margin vs padding <!-- element class="fragment" -->
 - block vs inline <!-- element class="fragment" -->
 
+
 ---
 
 ## **CSS Classes Fundamentals**
@@ -412,8 +413,10 @@ Common Inline elements:
     <strong>
       <em>
         <img />
-        <input /></em></strong></a
-></span>
+        <input />
+    </em></strong>
+  </a>
+</span>
 ```
 
 ---

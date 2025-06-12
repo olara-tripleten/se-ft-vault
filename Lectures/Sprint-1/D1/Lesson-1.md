@@ -141,8 +141,6 @@ Building meaningful, accessible, and interactive web pages
 
 **ID attributes** provide unique identifiers for HTML elements
 
-
-
 ```html
 <h2 id="introduction">Introduction</h2>
 <p id="main-paragraph">This is the main content...</p>
@@ -339,9 +337,3 @@ a:hover { color: red; }
 ```
 
 ---
-
-**Accessibility Considerations** Making your code inclusive
-
-<!-- element class="fragment" -->
-
-**Semantic HTML
