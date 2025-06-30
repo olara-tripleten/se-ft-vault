@@ -23,7 +23,189 @@
 		font-size: 32px;
 	}
 </style>
+---
+**Today's Learning Objectives**
 
+- Master smooth transitions for professional animations
+- Implement shadow effects for depth and visual hierarchy
+- Create linear and radial gradients for dynamic backgrounds
+- Control content visibility with overflow properties
+- Build complex animations using keyframes
+- Explore essential introductory animation techniques
+
+---
+
+**Smooth Transitions** Creating seamless property changes
+
+Transitions allow smooth changes between CSS property values over time
+
+<!-- element class="fragment" -->
+
+```css
+.button {
+  background-color: #3498db;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+```
+
+<!-- element class="fragment" -->
+
+**Key Properties:**
+
+- `transition-property`: Which properties to animate
+- `transition-duration`: How long the transition takes
+- `transition-timing-function`: Speed curve of the transition
+
+<!-- element class="fragment" -->
+
+---
+
+**Transition Timing Functions** Controlling animation speed curves
+
+```css
+.card {
+  transform: translateY(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+```
+
+<!-- element class="fragment" -->
+
+**Common timing functions:**
+
+- `ease`: Slow start, fast middle, slow end
+- `linear`: Constant speed
+- `ease-in`: Slow start, then fast
+- `ease-out`: Fast start, then slow
+- `cubic-bezier()`: Custom timing curves
+
+<!-- element class="fragment" -->
+
+---
+
+**Multiple Property Transitions** Animating several properties simultaneously
+
+```css
+.card {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
+}
+```
+
+<!-- element class="fragment" -->
+
+**Best Practice:** Specify individual properties instead of `all` for better performance
+
+<!-- element class="fragment" -->
+
+---
+
+**CSS Shadows** Adding depth and visual hierarchy
+
+**Box Shadow Syntax:** <!-- element class="fragment" -->
+
+```css
+box-shadow: h-offset v-offset blur spread color;
+```
+
+<!-- element class="fragment" -->
+
+```css
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card--elevated {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card--floating {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 12px 20px rgba(0, 0, 0, 0.08);
+}
+```
+
+<!-- element class="fragment" -->
+
+---
+
+**Animated Shadow Effects** Creating dynamic depth changes
+
+```css
+.button {
+  background-color: #3498db;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+```
+
+<!-- element class="fragment" -->
+
+**Text Shadow for Typography:** <!-- element class="fragment" -->
+
+```css
+.heading {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+```
+
+<!-- element class="fragment" -->
+
+---
+
+**Linear Gradients** Creating smooth color transitions
+
+**Basic Linear Gradient:** <!-- element class="fragment" -->
+
+```css
+.gradient-bg {
+  background: linear-gradient(to right, #3498db, #2ecc71);
+}
+```
+
+<!-- element class="fragment" -->
+
+**Directional Control:** <!-- element class="fragment" -->
+
+```css
+.gradient-bg--vertical {
+  background: linear-gradient(to bottom, #e74c3c, #f39c12);
+}
+
+.gradient-bg--diagonal {
+  background: linear-gradient(45deg, #9b59b6, #3498db);
+}
+
+.gradient-bg--angle {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+```
+
+---
 ## Tripleten Coffeeshop
 
 - Project Overview <!-- element class="fragment" -->

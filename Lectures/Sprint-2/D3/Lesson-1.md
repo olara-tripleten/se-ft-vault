@@ -30,7 +30,7 @@ Master the fundamentals of collecting user input on the web
 
 ---
 
-**What is a Form?** **The Gateway to User Interaction** <!-- element class="fragment" -->
+**What is a Form?** **The Gateway to User Interaction** 
 
 Forms are HTML elements that collect user input and send data to a server
 

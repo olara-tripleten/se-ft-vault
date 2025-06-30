@@ -1,19 +1,125 @@
-**Git and GitHub 101** Essential Version Control for Web Developers
 
+
+<style>
+	* {
+		width: 100%;
+			text-align: start;
+	}
+	.controls{
+		width: auto;
+		text-align: end;
+	}
+	h1 {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		font-size: 24px !important;
+		
+	}
+	h2 {
+		font-size: 48px !important;
+		font-weight: light;
+	}
+	
+	p, li {
+		font-size: 32px;
+	}
+</style>
+
+- **Terminal 101**
+- **Git and GitHub 101** Essential Version Control for Web Developers
+---
+**What is the Terminal or CLI?**
+
+- A **text-based interface** to interact with your computer
+    
+- You type commands instead of using a mouse
+    
+- Powerful for developers and automation
+    
+
+<!-- element class="fragment" -->
+
+**Why use it?**
+<!-- element class="fragment" -->
+
+- Faster than GUI for many tasks
+    
+- Gives more control over your system
+    
+- Essential for tools like Git, npm, etc.
+
+<!-- element class="fragment" -->
 ---
 
+## **Basic Terminal Navigation**
+
+**`cd` = "Change Directory"**
+
+- Lets you move around folders
+  
+```sh
+cd folder-name       # Move into a folder 
+cd ..                # Go up one level cd /path/to/folder   # Go to a specific path
+```
+
+
+**Check where you are:**
+
+
+```sh
+pwd   # Print working directory
+```
+---
+## **Deleting Files and Folders**
+
+**Delete a file:**
+
+```sh
+rm file.txt
+```
+
+**Delete a folder and its contents:**
+
+```sh
+rm -rf my-folder
+```
+
+⚠️ Be careful — deletion is permanent in the terminal!
+<!-- element class="fragment" -->
+
+---
+## **Creating Files and Folders**
+
+**Make new folders:**
+
+```sh
+mkdir my-folder
+```
+
+**Create new files:**
+
+```sh
+touch file.txt         # For code files or notes echo "Hello" > file.md # Add content while creating
+```
+
+You can also open files with a code editor:
+
+```sh
+code file.txt   # Opens file in VS Code
+```
+
+---
 **What is Version Control?**
 
 Version control is like having a **time machine** for your code
 
-<!-- element class="fragment" -->
 
 - Track changes to files over time
 - See what changed, when, and who made the change
 - Revert to previous versions when needed
 - Work collaboratively without conflicts
 
-<!-- element class="fragment" -->
 
 ---
 
@@ -209,136 +315,4 @@ git branch -d feature-navbar
 
 ---
 
-**Working with GitHub**
 
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
-
----
-
-**Creating Your First Repository**
-
-**On GitHub:**
-
-1. Click "New Repository" <!-- element class="fragment" -->
-2. Name your repository <!-- element class="fragment" -->
-3. Add description (optional) <!-- element class="fragment" -->
-4. Choose public or private <!-- element class="fragment" -->
-5. Initialize with README <!-- element class="fragment" -->
-
-<!-- element class="fragment" -->
-
-**Locally:**
-
-```bash
-git clone https://github.com/username/repo-name.git
-```
-
----
-
-**Connecting Local and Remote**
-
-<!-- element class="fragment" -->
-
-```bash
-# Add remote repository
-git remote add origin https://github.com/username/repo-name.git
-```
-
-<!-- element class="fragment" -->
-
-```bash
-# Push your changes to GitHub
-git push -u origin main
-```
-
-<!-- element class="fragment" -->
-
-```bash
-# Pull changes from GitHub
-git pull origin main
-```
-
----
-
-**The Complete Workflow**
-
-<!-- element class="fragment" -->
-
-```bash
-# 1. Make changes to files
-echo "Hello World" > index.html
-```
-
-<!-- element class="fragment" -->
-
-```bash
-# 2. Stage changes
-git add index.html
-```
-
-<!-- element class="fragment" -->
-
-```bash
-# 3. Commit with message
-git commit -m "Add homepage structure"
-```
-
-<!-- element class="fragment" -->
-
-```bash
-# 4. Push to GitHub
-git push origin main
-```
-
----
-
-**Best Practices**
-
-<!-- element class="fragment" -->
-
-**Commit Messages**
-
-- Be descriptive and concise
-- Use present tense: "Add navigation menu"
-- Not: "Added navigation menu"
-
-<!-- element class="fragment" -->
-
-**Frequency**
-
-- Commit early and often
-- Each commit should represent a logical change
-
-<!-- element class="fragment" -->
-
-**Branching**
-
-- Use branches for new features
-- Keep main branch stable
-
----
-
-**Common Git Commands Cheat Sheet**
-
-<!-- element class="fragment" -->
-
-```bash
-git init                    # Initialize repository
-git clone <url>            # Copy remote repository
-git add <file>             # Stage changes
-git commit -m "message"    # Save changes
-git push origin main       # Upload to GitHub
-git pull origin main       # Download from GitHub
-git status                 # Check status
-git log                    # View history
-git branch                 # List branches
-git checkout <branch>      # Switch branches
-```
-
----
-
-## Next Steps
-
-- Configuring your github account
-  - Create github account
-  - Add SSH authentication

@@ -24,36 +24,6 @@
 	}
 </style>
 
-## Coffeeshop Stage 2
-
-- Project Overview <!-- element class="fragment" -->
-- Folder Organization <!-- element class="fragment" -->
-- Work on the project <!-- element class="fragment" -->
-
----
-
-## Stage 2: Book a table Form
-
-## ![[Screenshot 2025-05-30 at 4.27.03 PM.png]]
-
-Workflow is the same as stage 1
-
-- Work on your project on vscode
-- After finishing the changes run:
-
-```sh
-# To Stage the changes
-git add -A
-
-# To commit the staged changes
-git commit -m "Add coffeeshop reservation section"
-
-# Push the changes
-git push
-```
-
----
-
 **BEM Folder Structure** Organizing CSS with Block, Element, Modifier Methodology
 
 A shallow, practical approach to structuring your stylesheets
@@ -194,3 +164,32 @@ The `pages/index.css` file imports all needed blocks:
 - 🔄 Reusable blocks across multiple pages <!-- element class="fragment" -->
 - 🧹 Clean, maintainable codebase <!-- element class="fragment" -->
 - ⚡ Efficient development workflow <!-- element class="fragment" -->
+
+---
+## Coffeeshop Stage 2
+
+- Project Overview <!-- element class="fragment" -->
+- Folder Organization <!-- element class="fragment" -->
+- Work on the project <!-- element class="fragment" -->
+
+---
+
+## Stage 2: Book a table Form
+
+## ![[Screenshot 2025-05-30 at 4.27.03 PM.png]]
+
+Workflow is the same as stage 1
+
+- Work on your project on vscode
+- After finishing the changes run:
+
+```sh
+# To Stage the changes
+git add -A
+
+# To commit the staged changes
+git commit -m "Add coffeeshop reservation section"
+
+# Push the changes
+git push
+```
