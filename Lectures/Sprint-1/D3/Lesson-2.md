@@ -620,3 +620,6 @@ note: Demonstrate
 - **Test your links** in the browser to catch mistakes early
 
 <!-- element class="fragment" -->
+
+---
+![[tt-logo.svg]]

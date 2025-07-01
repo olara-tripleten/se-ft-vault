@@ -356,3 +356,4 @@ Syntax:
 @import "../blocks/page.css"
 ```
 ---
+![[tt-logo.svg]]

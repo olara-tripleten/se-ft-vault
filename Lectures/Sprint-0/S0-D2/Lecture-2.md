@@ -752,3 +752,5 @@ Best of both worlds
 - Flow Horizontally like Inline Elements <!-- element class="fragment" -->
 - Accept width/height like block elements <!-- element class="fragment" -->
 - Useful for navigation menus and button groups <!-- element class="fragment" -->
+---
+![[tt-logo.svg]]

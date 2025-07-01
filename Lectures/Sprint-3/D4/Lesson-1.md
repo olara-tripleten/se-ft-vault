@@ -372,3 +372,5 @@ If your site doesn’t open at the link you’re given, try adding `index.html` 
 https://username.github.io/repo-name/index.html
 ```
 <!-- element class="fragment" -->
+---
+![[tt-logo.svg]]

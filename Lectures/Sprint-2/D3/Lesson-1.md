@@ -683,3 +683,5 @@ Forms are HTML elements that collect user input and send data to a server
 - Provide clear instructions
 
 <!-- element class="fragment" -->
+---
+![[tt-logo.svg]]

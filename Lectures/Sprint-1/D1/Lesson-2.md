@@ -504,3 +504,6 @@ Starting code
 - A modifier should only store the styles that are actually being _modified_.
 
 note: Given that the lecture is rather short, I created a small project where the idea is to refactor an [HTML file to use semantic selectors and BEM](./practice/bem-refactor/index.html)
+
+---
+![[tt-logo.svg]]

@@ -632,3 +632,5 @@ font: 16px/1.4 Arial, sans-serif;
 - Practice makes perfect!
 
 <!-- element class="fragment" -->
+---
+![[tt-logo.svg]]

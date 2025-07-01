@@ -727,3 +727,5 @@ With position relative
 - **Avoid for:** Main layout structure - use flexbox/grid instead
 
 <!-- element class="fragment" -->
+---
+![[tt-logo.svg]]

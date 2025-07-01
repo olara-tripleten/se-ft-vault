@@ -373,3 +373,6 @@ To deliver the project you need to:
 - Delivering with Windows https://youtu.be/SqwZs4mwl4A
 
 note: Everything on this lesson should be demonstrated
+
+---
+![[tt-logo.svg]]

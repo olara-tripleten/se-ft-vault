@@ -784,3 +784,6 @@ Combine with JavaScript to toggle the `--open` modifier class!
 - Explore progressive web app features
 
 <!-- element class="fragment" -->
+
+---
+![[tt-logo.svg]]

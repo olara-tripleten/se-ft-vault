@@ -739,3 +739,4 @@ How HTML appears in Developer Tools
 - Attributes are shown within the opening tags <!-- element class="fragment" -->
 
 ---
+![[tt-logo.svg]]

@@ -679,3 +679,4 @@ Instead of using width/height and frameborder to style the iframes always use cs
 <!-- element class="fragment" -->
 
 ---
+![[tt-logo.svg]]

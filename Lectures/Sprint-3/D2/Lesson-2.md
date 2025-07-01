@@ -324,4 +324,6 @@ The header and about images look good with position absolute and some opacity, n
 **Tips:**
 - If they don't seem to have any questions, ask yourself some questions, `how would you approach this`, `Does this look ok?`
 - Follow some of their suggestions even if they are not right, show why they are not right
-- 
+
+---
+![[tt-logo.svg]]

@@ -373,3 +373,5 @@ By the end of this stage your projects folder should look like this:
 - HTML Structure
 - Set up the fonts
 - Set basic page class styles
+---
+![[tt-logo.svg]]

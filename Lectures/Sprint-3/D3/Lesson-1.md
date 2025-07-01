@@ -480,3 +480,5 @@ Mistake 3: Ignoring responsive behavior indicated in design
 
 Mistake 4: Using fixed heights when content can vary 
 <!-- element class="fragment" -->
+---
+![[tt-logo.svg]]

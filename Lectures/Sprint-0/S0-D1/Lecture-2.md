@@ -860,3 +860,5 @@ note: Open Vscode on the index.html and styles.css
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web)
 - [CSS-Tricks](https://css-tricks.com/)
 - [Can I Use](https://caniuse.com/) for browser compatibility
+---
+![[tt-logo.svg]]

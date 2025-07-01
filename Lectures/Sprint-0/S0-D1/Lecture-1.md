@@ -459,3 +459,5 @@ p {
 ## What comes next
 - Go into the platform to start your learning process
 - Learn about HTML and CSS
+---
+![[tt-logo.svg]]

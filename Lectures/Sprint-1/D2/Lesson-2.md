@@ -666,3 +666,5 @@ Key takeaways from this lesson
 - **Extensions** enhance VSCode functionality for specific needs
 
 <!-- element class="fragment" -->
+---
+![[tt-logo.svg]]

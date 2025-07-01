@@ -757,6 +757,5 @@ transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 Building upon fundamental animation concepts to create sophisticated web interactions
 
 <!-- element class="fragment" -->
-
-
-
+---
+![[tt-logo.svg]]

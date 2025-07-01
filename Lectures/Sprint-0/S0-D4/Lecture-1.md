@@ -559,3 +559,4 @@ The (_not so_) hidden costs of automated code suggestions
 <!-- element class="fragment" -->
 
 ---
+![[tt-logo.svg]]

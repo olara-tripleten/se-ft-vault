@@ -506,3 +506,5 @@ A responsive card layout using CSS Grid and BEM
 
 - Clean BEM naming  <!-- element class="fragment" -->
 - Responsive behavior using minmax and auto-fit <!-- element class="fragment" -->
+---
+![[tt-logo.svg]]
