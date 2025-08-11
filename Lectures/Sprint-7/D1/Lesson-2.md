@@ -304,71 +304,136 @@
 
 ## Accessing Forms Using JavaScript
 
-- Forms can be accessed via `document.forms` (a collection of all forms). <!-- element class="fragment" -->
-- Access by `id` or `name` attribute: `document.forms.myFormId` or `document.forms.myFormName`. <!-- element class="fragment" -->
-- Direct access to form elements: `document.getElementById('myInput')`. <!-- element class="fragment" -->
+- Forms can be accessed via `document.forms` (a collection of all forms).
+
+<!-- element class="fragment" -->
+
+- Access by `id` or `name` attribute: `document.forms.myFormId` or `document.forms.myFormName`.
+
+<!-- element class="fragment" -->
+
+- Direct access to form elements: `document.getElementById('myInput')`.
+
+<!-- element class="fragment" -->
 
 ---
 
 ## Submitting Forms: The `submit` Event
 
-- The `submit` event fires when a form is submitted. <!-- element class="fragment" -->
-- Can be triggered by a submit button click or pressing Enter in a text field. <!-- element class="fragment" -->
-- Prevent default submission (page reload) using `event.preventDefault()`. <!-- element class="fragment" -->
+- The `submit` event fires when a form is submitted.
+
+<!-- element class="fragment" -->
+
+- Can be triggered by a submit button click or pressing Enter in a text field.
+
+<!-- element class="fragment" -->
+
+- Prevent default submission (page reload) using `event.preventDefault()`.
+
+<!-- element class="fragment" -->
 
 ```javascript
-const myForm = document.getElementById('myForm');
-myForm.addEventListener('submit', (event) => {
+const myForm = document.getElementById("myForm");
+myForm.addEventListener("submit", (event) => {
   event.preventDefault(); // Stop default form submission
-  console.log('Form submitted!');
+  console.log("Form submitted!");
   // Process form data here
 });
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 ## Accessing Form Elements
 
-- Individual elements within a form can be accessed via the form's `elements` collection. <!-- element class="fragment" -->
-- Example: `myForm.elements.myInputName` or `myForm.elements[0]`. <!-- element class="fragment" -->
-- Common input types: `text`, `password`, `checkbox`, `radio`, `select`, `textarea`. <!-- element class="fragment" -->
+- Individual elements within a form can be accessed via the form's `elements` collection.
+
+<!-- element class="fragment" -->
+
+- Example: `myForm.elements.myInputName` or `myForm.elements[0]`.
+
+<!-- element class="fragment" -->
+
+- Common input types: `text`, `password`, `checkbox`, `radio`, `select`, `textarea`.
+
+<!-- element class="fragment" -->
 
 ---
 
 ## Getting the Value of Form Elements
 
-- Use the `value` property for most input types (text, password, hidden, textarea, select). <!-- element class="fragment" -->
-- For checkboxes and radio buttons, use `checked` property (boolean). <!-- element class="fragment" -->
-- For `<select multiple>`, iterate through `options` and check `selected` property. <!-- element class="fragment" -->
+- Use the `value` property for most input types (text, password, hidden, textarea, select).
+
+<!-- element class="fragment" -->
+
+- For checkboxes and radio buttons, use `checked` property (boolean).
+
+<!-- element class="fragment" -->
+
+- For `<select multiple>`, iterate through `options` and check `selected` property.
+
+<!-- element class="fragment" -->
 
 ```javascript
-const username = document.getElementById('username').value;
-const rememberMe = document.getElementById('rememberMe').checked;
+const username = document.getElementById("username").value;
+const rememberMe = document.getElementById("rememberMe").checked;
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 ## The `change` and `input` Events
 
-- `change`: Fires when an element's value is committed (e.g., after typing and blurring a text field, or selecting an option in a dropdown). <!-- element class="fragment" -->
-- `input`: Fires immediately when the value of an `<input>` or `<textarea>` element changes. <!-- element class="fragment" -->
-- `input` is better for real-time validation or character counting. <!-- element class="fragment" -->
+- `change`: Fires when an element's value is committed (e.g., after typing and blurring a text field, or selecting an option in a dropdown).
+
+<!-- element class="fragment" -->
+
+- `input`: Fires immediately when the value of an `<input>` or `<textarea>` element changes.
+
+<!-- element class="fragment" -->
+
+- `input` is better for real-time validation or character counting.
+
+<!-- element class="fragment" -->
 
 ---
 
 ## The `reset()` and `submit()` Methods
 
-- `form.reset()`: Resets all form fields to their initial values (as defined in HTML). <!-- element class="fragment" -->
-- `form.submit()`: Programmatically submits the form. Does *not* trigger the `submit` event listener. <!-- element class="fragment" -->
-- Use `form.requestSubmit()` to trigger the `submit` event programmatically. <!-- element class="fragment" -->
+- `form.reset()`: Resets all form fields to their initial values (as defined in HTML).
+
+<!-- element class="fragment" -->
+
+- `form.submit()`: Programmatically submits the form. Does _not_ trigger the `submit` event listener.
+
+<!-- element class="fragment" -->
+
+- Use `form.requestSubmit()` to trigger the `submit` event programmatically.
+
+<!-- element class="fragment" -->
+
+---
+
+note: Add usage to slide
 
 ---
 
 ## Conclusions: Working With Forms
 
-- JavaScript provides robust ways to interact with HTML forms. <!-- element class="fragment" -->
-- Access forms and elements efficiently using their `id` or `name`. <!-- element class="fragment" -->
-- Control form submission and data retrieval. <!-- element class="fragment" -->
-- Choose appropriate events (`change`, `input`, `submit`) for desired interactivity. <!-- element class="fragment" -->
+- JavaScript provides robust ways to interact with HTML forms.
+
+<!-- element class="fragment" -->
+
+- Access forms and elements efficiently using their `id` or `name`.
+
+<!-- element class="fragment" -->
+
+- Control form submission and data retrieval.
+
+<!-- element class="fragment" -->
+
+- Choose appropriate events (`change`, `input`, `submit`) for desired interactivity.
+
+<!-- element class="fragment" -->

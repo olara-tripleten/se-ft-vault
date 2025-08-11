@@ -304,32 +304,53 @@
 
 ## Browser Built-In Form Validation
 
-- HTML5 provides built-in validation attributes: `required`, `minlength`, `maxlength`, `type` (e.g., `email`, `url`, `number`), `pattern`. <!-- element class="fragment" -->
-- These attributes trigger default browser validation messages and styling. <!-- element class="fragment" -->
-- `novalidate` attribute on the `<form>` tag can disable browser validation. <!-- element class="fragment" -->
+- HTML5 provides built-in validation attributes: `required`, `minlength`, `maxlength`, `type` (e.g., `email`, `url`, `number`), `pattern`.
+
+<!-- element class="fragment" -->
+
+- These attributes trigger default browser validation messages and styling.
+
+<!-- element class="fragment" -->
+
+- `novalidate` attribute on the `<form>` tag can disable browser validation.
+
+<!-- element class="fragment" -->
 
 ```html
 <form>
   <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-  
+  <input type="email" id="email" name="email" required />
+
   <label for="password">Password (min 8 chars):</label>
-  <input type="password" id="password" name="password" minlength="8">
-  
+  <input type="password" id="password" name="password" minlength="8" />
+
   <button type="submit">Submit</button>
 </form>
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 ## Styling Invalid Form Fields
 
-- CSS pseudo-classes for styling validation states: <!-- element class="fragment" -->
-  - `:valid`: Applies when the element's content validates correctly. <!-- element class="fragment" -->
-  - `:invalid`: Applies when the element's content does not validate correctly. <!-- element class="fragment" -->
-  - `:required`: Applies to elements with the `required` attribute. <!-- element class="fragment" -->
-  - `:optional`: Applies to elements without the `required` attribute. <!-- element class="fragment" -->
+- CSS pseudo-classes for styling validation states:
+
+  - `:valid`: Applies when the element's content validates correctly.
+
+  <!-- element class="fragment" -->
+
+  - `:invalid`: Applies when the element's content does not validate correctly.
+
+  <!-- element class="fragment" -->
+
+  - `:required`: Applies to elements with the `required` attribute.
+
+  <!-- element class="fragment" -->
+
+  - `:optional`: Applies to elements without the `required` attribute.
+
+  <!-- element class="fragment" -->
 
 ```css
 input:invalid {
@@ -340,21 +361,41 @@ input:valid {
   border-color: green;
 }
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 ## JavaScript Form Validation
 
-- Provides more control and customizability than built-in browser validation. <!-- element class="fragment" -->
-- Allows for complex validation rules (e.g., cross-field validation, server-side checks). <!-- element class="fragment" -->
-- Can offer a better user experience with custom error messages and real-time feedback. <!-- element class="fragment" -->
-- Often used in conjunction with browser validation, or as a fallback for older browsers. <!-- element class="fragment" -->
+- Provides more control and customizability than built-in browser validation.
+
+<!-- element class="fragment" -->
+
+- Allows for complex validation rules (e.g., cross-field validation, server-side checks).
+
+<!-- element class="fragment" -->
+
+- Can offer a better user experience with custom error messages and real-time feedback.
+
+<!-- element class="fragment" -->
+
+- Often used in conjunction with browser validation, or as a fallback for older browsers.
+
+<!-- element class="fragment" -->
 
 ---
 
 ## When to Use Which Validation
 
-- **Browser Built-in**: Quick, easy, and provides basic validation for common cases. Good for initial checks. <!-- element class="fragment" -->
-- **CSS Styling**: Enhances user feedback by visually indicating valid/invalid states. <!-- element class="fragment" -->
-- **JavaScript**: For complex logic, custom error messages, real-time feedback, and a more tailored user experience. Always implement server-side validation as well for security. <!-- element class="fragment" -->
+- **Browser Built-in**: Quick, easy, and provides basic validation for common cases. Good for initial checks.
+
+<!-- element class="fragment" -->
+
+- **CSS Styling**: Enhances user feedback by visually indicating valid/invalid states.
+
+<!-- element class="fragment" -->
+
+- **JavaScript**: For complex logic, custom error messages, real-time feedback, and a more tailored user experience. Always implement server-side validation as well for security.
+
+<!-- element class="fragment" -->

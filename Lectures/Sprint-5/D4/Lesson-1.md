@@ -298,7 +298,7 @@
 }
 </style>
 
-# Intermediate Git + Spots Project
+# Intermediate Git
 
 ---
 
@@ -323,16 +323,85 @@ git add hello.txt
 # 3. Commit the changes
 git commit -m "Add hello.txt"
 ```
+<!-- element class="fragment" -->
 
 ---
+## Creating good commit messages
+ The Golden Rules:
+ - **Use the imperative mood**(Use "Add feature" not "Added feature" or "Adding feature.")
+ - **Keep the subject line under 50 characters** - This ensures the message displays properly in Git tools and command line outputs. Think of it as a brief headline.
+ - **Capitalize the subject line** - Start with a capital letter for consistency and professionalism.
+ - **Don't end the subject line with a period** - It's unnecessary and wastes precious character space.
+---
+## What Makes a Good Commit Message
+**Be specific and descriptive**
 
+- ❌ "Fix bug"
+- ✅ "Fix null pointer exception in user authentication"
+
+**Explain the "why" not just the "what"**
+
+- ❌ "Update validation rules"
+- ✅ "Strengthen password validation to meet security requirements"
+
+**Use consistent prefixes** (if your team uses them):
+- add: 
+- `feat:` - New features or functionality
+- `fix:` - Bug fixes
+- `docs:` - Documentation changes
+- `style:` - Code style changes (formatting, semicolons, etc.)
+- `refactor:` - Code refactoring without changing functionality
+- `test:` - Adding or modifying tests
+---
+## Structure and Format
+
+Use this structure for more complex commits:
+
+```
+Short summary (50 chars or less)
+
+More detailed explanation if needed. Wrap at 72 characters.
+Explain what was changed and why, not how (the code shows how).
+
+- Use bullet points for multiple changes
+- Each point should be a complete thought
+- Leave blank lines between sections
+```
+---
+## What to Avoid
+
+**Vague messages:**
+
+- "Update stuff"
+- "Fix things"
+- "Changes"
+
+**Technical jargon without context:**
+
+- "Refactor XYZ module"
+- "Update dependencies"
+
+**Mixing multiple unrelated changes:**
+
+- "Fix login bug and add new homepage design"
+
+## Additional Tips
+
+**Reference issues when applicable:**
+
+- "Fix user login validation (closes #42)"
+- "Resolves #156: Add export functionality"
+
+**Use present tense consistently:**
+
+- "Add" not "Added"
+- "Fix" not "Fixed"
+- "Update" not "Updated"
+---
 ## The commit logs and hashes
 
 - `git log`: Shows the commit history of your repository. Each commit has a unique hash, an author, a date, and a commit message.
 - **Commit hash:** A unique identifier for each commit. You can use the commit hash to refer to a specific commit in other Git commands.
-
-<!-- element class="fragment" -->
-
 ### `git log` Example:
 ```bash
 git log
@@ -359,8 +428,4 @@ Date:   Mon Jan 1 00:00:00 2024 +0000
 - `git commit --amend`: Amends the last commit. This is useful if you forgot to include a file or made a mistake in the commit message. It's important to note that you should only amend commits that have not been pushed to a remote repository.
 - `git reset`: Resets the current HEAD to a specified state. This can be used to unstage files, or to undo commits. There are three modes of `git reset`: `--soft`, `--mixed`, and `--hard`. Be careful when using `git reset --hard`, as it will discard all changes in your working directory.
 - `git revert`: Creates a new commit that undoes the changes from a previous commit. This is a safer way to undo changes than `git reset`, as it does not rewrite the commit history. This is the recommended way to undo changes that have already been pushed to a remote repository.
-
----
-
-## Project: Spots
 

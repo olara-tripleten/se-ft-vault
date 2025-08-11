@@ -315,7 +315,7 @@ const form = document.getElementById('myForm');
 form.addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent the form from submitting
   console.log('Form submitted!');
-  // You can now access form data and send it to the server using fetch() or other methods.
+  // You can now access form data and send it to the server
 });
 ```
 

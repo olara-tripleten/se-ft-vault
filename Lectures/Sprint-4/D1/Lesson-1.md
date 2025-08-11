@@ -354,6 +354,9 @@ console.log("This message will appear in the browser's console.");
 ```
 <!-- element class="fragment" -->
 
+
+note: Remove last element of the list
+
 ---
 
 ## Comments
@@ -382,6 +385,24 @@ It can span multiple lines.
 let y = 10;
 ```
 <!-- element class="fragment" -->
+
+---
+
+## Primitive data types
+
+Javascript has several primitive data types:
+
+- `String`: Represents text.
+- `Number`: Represents numbers.
+- `Boolean`: Represents `true` or `false`.
+- `Undefined`: Represents an uninitialized variable.
+- `Null`: Represents the intentional absence of any object value.
+- `Symbol`: Represents a unique identifier.
+- `BigInt`: Represents integers of arbitrary length.
+
+<!-- element class="fragment" -->
+
+note: I'm adding the Symbol and BigInt but I'm not sure if it's worth having them since they are not really that important outside of some specific cases
 
 ---
 
@@ -451,22 +472,6 @@ Javascript provides many useful methods for working with strings, such as:
 
 ---
 
-## Primitive data types
-
-Javascript has several primitive data types:
-
-- `String`: Represents text.
-- `Number`: Represents numbers.
-- `Boolean`: Represents `true` or `false`.
-- `Undefined`: Represents an uninitialized variable.
-- `Null`: Represents the intentional absence of any object value.
-- `Symbol`: Represents a unique identifier.
-- `BigInt`: Represents integers of arbitrary length.
-
-<!-- element class="fragment" -->
-
----
-
 ## Variables
 
 Variables are used to store data. You can declare variables using the `var`, `let`, or `const` keywords.
@@ -476,8 +481,8 @@ Variables are used to store data. You can declare variables using the `var`, `le
 - `const`: The modern way of declaring variables that cannot be reassigned. It also has block scope and is not hoisted. You must assign a value to a `const` variable when you declare it.
 
 <!-- element class="fragment" -->
-
-### Example: <!-- element class="fragment" -->
+---
+### Example:
 ```javascript
 let age = 30;
 const name = "John";
@@ -485,7 +490,6 @@ const name = "John";
 age = 31; // This is allowed
 // name = "Jane"; // This will cause an error
 ```
-<!-- element class="fragment" -->
 ---
 
 ## null, undefined, NaN

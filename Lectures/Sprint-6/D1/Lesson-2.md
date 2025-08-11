@@ -470,6 +470,7 @@ console.log("year" in car);    // false
 
 <!-- element class="fragment" -->
 
+---
 ### `hasOwnProperty()` Method
 
 Checks if a property exists directly on the object (not on its prototype chain).
@@ -481,6 +482,7 @@ console.log(car.hasOwnProperty("toString")); // false (inherited from prototype)
 
 <!-- element class="fragment" -->
 
+---
 ### Checking for `undefined`
 
 Be cautious with this, as a property might exist but have an `undefined` value.
@@ -514,7 +516,7 @@ for (const key in book) {
 ```
 
 <!-- element class="fragment" -->
-
+---
 ### `Object.keys()`, `Object.values()`, `Object.entries()`
 
 These methods return an array of a given object's own enumerable string-keyed property names, values, or [key, value] pairs, respectively.
@@ -538,6 +540,7 @@ This is a fundamental concept in JavaScript. Primitive values (strings, numbers,
 
 <!-- element class="fragment" -->
 
+---
 ### Pass by Value (Primitives)
 
 When you assign a primitive value to a new variable or pass it to a function, a copy of the value is made.
@@ -552,6 +555,7 @@ console.log(b); // 20
 
 <!-- element class="fragment" -->
 
+---
 ### Pass by Reference (Objects)
 
 When you assign an object to a new variable or pass it to a function, the reference (memory address) to the object is copied, not the object itself. Both variables then point to the same object in memory.
@@ -575,6 +579,7 @@ console.log(myObj); // { newValue: "Modified" }
 
 <!-- element class="fragment" -->
 
+---
 ### Copying Objects (Deep vs. Shallow)
 
 To create a true copy of an object (not just a reference), you need to perform a shallow or deep copy.

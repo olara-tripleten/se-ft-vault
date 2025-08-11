@@ -314,11 +314,11 @@
   - `Ctrl + K`: Clear the line after the cursor.
   - `Ctrl + W`: Delete the word before the cursor.
   - `Ctrl + L`: Clear the screen.
-- **History:**
+
+**History:**
   - `history`: Display the command history.
   - `!n`: Execute the nth command from the history.
   - `!!`: Execute the last command.
-  - `!$`: Execute the last argument of the last command.
   - `Ctrl + R`: Search the command history.
 
 ---

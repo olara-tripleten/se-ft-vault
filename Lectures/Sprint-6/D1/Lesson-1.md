@@ -312,7 +312,8 @@ Scope determines the accessibility of variables, objects, and functions in diffe
 
 <!-- element class="fragment" -->
 
-### Global Scope
+---
+### Global Scope 
 
 Variables declared in the global scope are accessible from anywhere in your code.
 
@@ -346,6 +347,7 @@ functionScopeExample();
 
 <!-- element class="fragment" -->
 
+---
 ### Block Scope (let and const)
 
 Variables declared with `let` and `const` inside a block (e.g., `if` statements, `for` loops, or just `{}`) are only accessible within that block.
@@ -357,6 +359,8 @@ if (true) {
 }
 // console.log(blockVar); // Error: blockVar is not defined
 ```
+
+<!-- element class="fragment" -->
 
 ---
 
@@ -434,6 +438,7 @@ Both spread and rest parameters use the `...` syntax, but they serve different p
 
 <!-- element class="fragment" -->
 
+---
 ### Rest Parameters (in function definitions)
 
 Rest parameters allow a function to accept an indefinite number of arguments as an array. They must be the last parameter in a function definition.
@@ -448,7 +453,7 @@ console.log(sumAll(10, 20, 30, 40)); // Outputs: 100
 ```
 
 <!-- element class="fragment" -->
-
+---
 ### Spread Syntax (in function calls, array literals, object literals)
 
 Spread syntax expands an iterable (like an array or string) into individual elements. It's useful for copying arrays, concatenating arrays, and passing array elements as arguments to functions.
@@ -468,6 +473,7 @@ const obj1 = { a: 1, b: 2 };
 const obj2 = { ...obj1, c: 3 }; // Copy and add properties
 console.log(obj2); // { a: 1, b: 2, c: 3 }
 ```
+<!-- element class="fragment" -->
 
 ---
 

@@ -50,8 +50,10 @@
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   line-height: 1.2;
+  text-align: left;
   letter-spacing: -0.025em;
   text-transform: none;
+  
   color: var(--text-primary);
   margin: 0 0 1.5rem 0;
 }

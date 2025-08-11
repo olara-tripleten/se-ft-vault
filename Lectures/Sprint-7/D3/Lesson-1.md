@@ -304,24 +304,50 @@
 
 ## What is Modular JavaScript? And Why?
 
-- **Modular JavaScript** is a design pattern that organizes code into independent, reusable modules. <!-- element class="fragment" -->
-- **Why?** <!-- element class="fragment" -->
-  - **Maintainability**: Easier to manage and update smaller, focused code units. <!-- element class="fragment" -->
-  - **Reusability**: Modules can be reused across different parts of an application or in other projects. <!-- element class="fragment" -->
-  - **Readability**: Code becomes easier to understand and reason about. <!-- element class="fragment" -->
-  - **Collaboration**: Multiple developers can work on different modules simultaneously without conflicts. <!-- element class="fragment" -->
-  - **Performance**: Modern module loaders can optimize loading and parsing. <!-- element class="fragment" -->
+- **Modular JavaScript** is a design pattern that organizes code into independent, reusable modules.
+
+<!-- element class="fragment" -->
+
+- **Why?**
+
+  - **Maintainability**: Easier to manage and update smaller, focused code units.
+
+  <!-- element class="fragment" -->
+
+  - **Reusability**: Modules can be reused across different parts of an application or in other projects.
+
+  <!-- element class="fragment" -->
+
+  - **Readability**: Code becomes easier to understand and reason about.
+
+  <!-- element class="fragment" -->
+
+  - **Collaboration**: Multiple developers can work on different modules simultaneously without conflicts.
+
+  <!-- element class="fragment" -->
+
+  - **Performance**: Modern module loaders can optimize loading and parsing.
+
+  <!-- element class="fragment" -->
 
 ---
 
 ## IIFE (Immediately Invoked Function Expression)
 
-- An IIFE is a JavaScript function that runs as soon as it is defined. <!-- element class="fragment" -->
-- Creates a private scope for variables, preventing them from polluting the global namespace. <!-- element class="fragment" -->
-- A common pattern for creating modules before native module support. <!-- element class="fragment" -->
+- An IIFE is a JavaScript function that runs as soon as it is defined.
+
+<!-- element class="fragment" -->
+
+- Creates a private scope for variables, preventing them from polluting the global namespace.
+
+<!-- element class="fragment" -->
+
+- A common pattern for creating modules before native module support.
+
+<!-- element class="fragment" -->
 
 ```javascript
-(function() {
+(function () {
   // Private variables and functions
   let counter = 0;
 
@@ -332,35 +358,60 @@
   // Expose public interface
   window.myModule = {
     increment: increment,
-    getCounter: () => counter
+    getCounter: () => counter,
   };
 })();
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 ## Encapsulation and Modules
 
-- **Encapsulation**: Bundling data and methods that operate on the data within a single unit (the module), and restricting direct access to some of the component's parts. <!-- element class="fragment" -->
-- Modules promote encapsulation by keeping internal logic private and exposing only a public interface. <!-- element class="fragment" -->
-- This reduces dependencies and makes code more robust. <!-- element class="fragment" -->
+- **Encapsulation**: Bundling data and methods that operate on the data within a single unit (the module), and restricting direct access to some of the component's parts.
+
+<!-- element class="fragment" -->
+
+- Modules promote encapsulation by keeping internal logic private and exposing only a public interface.
+
+<!-- element class="fragment" -->
+
+- This reduces dependencies and makes code more robust.
+
+<!-- element class="fragment" -->
 
 ---
 
 ## What are Modules (ES Modules)
 
-- **ES Modules (ECMAScript Modules)** are the official, standardized module system for JavaScript. <!-- element class="fragment" -->
-- Use `import` and `export` statements to define dependencies and expose functionality. <!-- element class="fragment" -->
-- Support static analysis, allowing for better tooling (e.g., tree-shaking for smaller bundle sizes). <!-- element class="fragment" -->
+- **ES Modules (ECMAScript Modules)** are the official, standardized module system for JavaScript.
+
+<!-- element class="fragment" -->
+
+- Use `import` and `export` statements to define dependencies and expose functionality.
+
+<!-- element class="fragment" -->
+
+- Support static analysis, allowing for better tooling (e.g., tree-shaking for smaller bundle sizes).
+
+<!-- element class="fragment" -->
 
 ---
 
 ## How Can We Use Them
 
-- **Browser**: Use `<script type="module">` in HTML. <!-- element class="fragment" -->
-- **Node.js**: Use `.mjs` file extension or configure `"type": "module"` in `package.json`. <!-- element class="fragment" -->
-- **Bundlers**: Tools like Webpack, Rollup, Parcel process modules for production. <!-- element class="fragment" -->
+- **Browser**: Use `<script type="module">` in HTML.
+
+<!-- element class="fragment" -->
+
+- **Node.js**: Use `.mjs` file extension or configure `"type": "module"` in `package.json`.
+
+<!-- element class="fragment" -->
+
+- **Bundlers**: Tools like Webpack, Rollup, Parcel process modules for production.
+
+<!-- element class="fragment" -->
 
 ---
 
@@ -368,52 +419,81 @@
 
 ### `export`
 
-- **Named Exports**: Export multiple values from a module. <!-- element class="fragment" -->
+- **Named Exports**: Export multiple values from a module.
   ```javascript
   // math.js
   export const add = (a, b) => a + b;
   export const subtract = (a, b) => a - b;
   ```
   <!-- element class="fragment" -->
-- **Default Exports**: Export a single value as the primary export. <!-- element class="fragment" -->
-  ```javascript
-  // logger.js
-  const log = (message) => console.log(message);
-  export default log;
-  ```
+- **Default Exports**: Export a single value as the primary export.
+
+<!-- element class="fragment" -->
+
+```javascript
+// logger.js
+const log = (message) => console.log(message);
+export default log;
+```
+
   <!-- element class="fragment" -->
 
 ---
 
 ### `import`
 
-- **Named Imports**: Import specific named exports. <!-- element class="fragment" -->
-  ```javascript
-  // app.js
-  import { add, subtract } from './math.js';
-  console.log(add(2, 3));
-  ```
+- **Named Imports**: Import specific named exports.
+
+<!-- element class="fragment" -->
+
+```javascript
+// app.js
+import { add, subtract } from "./math.js";
+console.log(add(2, 3));
+```
+
   <!-- element class="fragment" -->
-- **Default Imports**: Import the default export. <!-- element class="fragment" -->
-  ```javascript
-  // app.js
-  import myLog from './logger.js';
-  myLog('Hello from module!');
-  ```
+
+- **Default Imports**: Import the default export.
+
+<!-- element class="fragment" -->
+
+```javascript
+// app.js
+import myLog from "./logger.js";
+myLog("Hello from module!");
+```
+
   <!-- element class="fragment" -->
-- **Import All**: Import all named exports as an object. <!-- element class="fragment" -->
-  ```javascript
-  // app.js
-  import * as math from './math.js';
-  console.log(math.subtract(5, 2));
-  ```
+
+- **Import All**: Import all named exports as an object.
+
+<!-- element class="fragment" -->
+
+```javascript
+// app.js
+import * as math from "./math.js";
+console.log(math.subtract(5, 2));
+```
+
   <!-- element class="fragment" -->
 
 ---
 
 ## Conclusions: Modular JavaScript
 
-- ES Modules are the modern standard for organizing JavaScript code. <!-- element class="fragment" -->
-- They promote better code organization, reusability, and maintainability. <!-- element class="fragment" -->
-- `import` and `export` are key to defining module dependencies and interfaces. <!-- element class="fragment" -->
-- Embrace modularity for scalable and robust applications. <!-- element class="fragment" -->
+- ES Modules are the modern standard for organizing JavaScript code.
+
+<!-- element class="fragment" -->
+
+- They promote better code organization, reusability, and maintainability.
+
+<!-- element class="fragment" -->
+
+- `import` and `export` are key to defining module dependencies and interfaces.
+
+<!-- element class="fragment" -->
+
+- Embrace modularity for scalable and robust applications.
+
+<!-- element class="fragment" -->

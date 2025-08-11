@@ -304,9 +304,17 @@
 
 ## Keyboard Events
 
-- `keydown`: Fired when a key is pressed down. <!-- element class="fragment" -->
-- `keyup`: Fired when a key is released. <!-- element class="fragment" -->
-- `keypress`: Fired when a key produces a character value. (Deprecated) <!-- element class="fragment" -->
+- `keydown`: Fired when a key is pressed down.  
+
+<!-- element class="fragment" -->
+
+- `keyup`: Fired when a key is released. 
+
+<!-- element class="fragment" -->
+
+- `keypress`: Fired when a key produces a character value. (Deprecated) 
+
+<!-- element class="fragment" -->
 
 ---
 
@@ -320,17 +328,33 @@
 
 ## Properties of the Mouse Event Object
 
-- `clientX`, `clientY`: Coordinates of the mouse pointer relative to the viewport. <!-- element class="fragment" -->
-- `screenX`, `screenY`: Coordinates of the mouse pointer relative to the screen. <!-- element class="fragment" -->
-- `button`: Which mouse button was pressed (0 for left, 1 for middle, 2 for right). <!-- element class="fragment" -->
-- `target`: The DOM element that triggered the event. <!-- element class="fragment" -->
+- `clientX`, `clientY`: Coordinates of the mouse pointer relative to the viewport. 
+
+<!-- element class="fragment" -->
+
+- `screenX`, `screenY`: Coordinates of the mouse pointer relative to the screen.
+
+<!-- element class="fragment" -->
+
+- `button`: Which mouse button was pressed (0 for left, 1 for middle, 2 for right). 
+
+<!-- element class="fragment" -->
+
+- `target`: The DOM element that triggered the event.
+
+<!-- element class="fragment" -->
 
 ---
 
 ## Removing an Event Listener
 
-- Use `removeEventListener()` with the same event type, function, and options used for `addEventListener()`. <!-- element class="fragment" -->
-- Essential for preventing memory leaks, especially in single-page applications. <!-- element class="fragment" -->
+- Use `removeEventListener()` with the same event type, function, and options used for `addEventListener()`.
+
+<!-- element class="fragment" -->
+
+- Essential for preventing memory leaks, especially in single-page applications. 
+
+<!-- element class="fragment" -->
 
 ```javascript
 const myElement = document.getElementById('myButton');
@@ -349,22 +373,44 @@ myElement.removeEventListener('click', handleClick);
 
 ## Event Bubbling and Delegation
 
-- **Bubbling**: Events propagate from the target element up to the `document` object. <!-- element class="fragment" -->
-- **Delegation**: Attaching a single event listener to a parent element instead of multiple children. <!-- element class="fragment" -->
-- Improves performance and simplifies code for dynamic lists. <!-- element class="fragment" -->
+- **Bubbling**: Events propagate from the target element up to the `document` object. 
+
+<!-- element class="fragment" -->
+
+- **Delegation**: Attaching a single event listener to a parent element instead of multiple children. 
+
+<!-- element class="fragment" -->
+
+- Improves performance and simplifies code for dynamic lists. 
+
+<!-- element class="fragment" -->
 
 ---
 
 ## Preventing Bubbling
 
-- `event.stopPropagation()`: Stops the event from propagating further up the DOM tree. <!-- element class="fragment" -->
-- Use with caution, as it can interfere with expected event behavior. <!-- element class="fragment" -->
+- `event.stopPropagation()`: Stops the event from propagating further up the DOM tree.
+
+<!-- element class="fragment" -->
+
+- Use with caution, as it can interfere with expected event behavior. 
+
+<!-- element class="fragment" -->
 
 ---
 
 ## Conclusions: Event Handling
 
-- Event handling is fundamental for interactive web applications. <!-- element class="fragment" -->
-- Understand event types, properties, and propagation. <!-- element class="fragment" -->
-- Use event delegation for efficiency. <!-- element class="fragment" -->
+- Event handling is fundamental for interactive web applications.
+
+<!-- element class="fragment" -->
+
+- Understand event types, properties, and propagation. 
+
+<!-- element class="fragment" -->
+
+- Use event delegation for efficiency. 
+
+<!-- element class="fragment" -->
+
 - Remember to remove listeners when no longer needed. <!-- element class="fragment" -->

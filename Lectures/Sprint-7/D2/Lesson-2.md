@@ -304,48 +304,93 @@
 
 ## Connecting JavaScript Validation Methods to DOM
 
-- Attach validation functions to form events (`submit`, `input`, `change`). <!-- element class="fragment" -->
-- Use `event.target` to get the element that triggered the event. <!-- element class="fragment" -->
-- Display error messages dynamically near the invalid fields. <!-- element class="fragment" -->
+- Attach validation functions to form events (`submit`, `input`, `change`).
+
+<!-- element class="fragment" -->
+
+- Use `event.target` to get the element that triggered the event.
+
+<!-- element class="fragment" -->
+
+- Display error messages dynamically near the invalid fields.
+
+<!-- element class="fragment" -->
 
 ```javascript
-const emailInput = document.getElementById('email');
-const emailError = document.getElementById('emailError');
+const emailInput = document.getElementById("email");
+const emailError = document.getElementById("emailError");
 
-emailInput.addEventListener('input', () => {
+emailInput.addEventListener("input", () => {
   if (emailInput.validity.valid) {
-    emailError.textContent = ''; // Clear error message
+    emailError.textContent = ""; // Clear error message
   } else {
-    emailError.textContent = 'Enter a valid email address.';
+    emailError.textContent = "Enter a valid email address.";
   }
 });
 ```
+
 <!-- element class="fragment" -->
 
 ---
 
 ## Validation of Several Fields and Forms
 
-- Create a single validation function that checks all relevant fields. <!-- element class="fragment" -->
-- Iterate through form elements and apply validation rules. <!-- element class="fragment" -->
-- Collect all validation errors and display them to the user. <!-- element class="fragment" -->
-- Consider a `validateForm()` function called on `submit` event. <!-- element class="fragment" -->
+- Create a single validation function that checks all relevant fields.
+
+<!-- element class="fragment" -->
+
+- Iterate through form elements and apply validation rules.
+
+<!-- element class="fragment" -->
+
+- Collect all validation errors and display them to the user.
+
+<!-- element class="fragment" -->
+
+- Consider a `validateForm()` function called on `submit` event.
+
+<!-- element class="fragment" -->
 
 ---
 
 ## Interaction with Other DOM Elements
 
-- Dynamically add/remove CSS classes to highlight valid/invalid fields. <!-- element class="fragment" -->
-- Show/hide error messages or success indicators. <!-- element class="fragment" -->
-- Disable/enable submit buttons based on form validity. <!-- element class="fragment" -->
-- Provide visual feedback (e.g., checkmarks, error icons). <!-- element class="fragment" -->
+- Dynamically add/remove CSS classes to highlight valid/invalid fields.
+
+<!-- element class="fragment" -->
+
+- Show/hide error messages or success indicators.
+
+<!-- element class="fragment" -->
+
+- Disable/enable submit buttons based on form validity.
+
+<!-- element class="fragment" -->
+
+- Provide visual feedback (e.g., checkmarks, error icons).
+
+<!-- element class="fragment" -->
 
 ---
 
 ## Best Practices for JavaScript Form Validation
 
-- **Client-side and Server-side**: Always validate on both sides. Client-side for UX, server-side for security. <!-- element class="fragment" -->
-- **Real-time Feedback**: Validate as the user types (using `input` event) for immediate feedback. <!-- element class="fragment" -->
-- **Clear Error Messages**: Tell the user *what* is wrong and *how* to fix it. <!-- element class="fragment" -->
-- **Accessibility**: Ensure error messages are accessible to screen readers. <!-- element class="fragment" -->
-- **Usability**: Don't prevent submission until all fields are valid, but guide the user. <!-- element class="fragment" -->
+- **Client-side and Server-side**: Always validate on both sides. Client-side for UX, server-side for security.
+
+<!-- element class="fragment" -->
+
+- **Real-time Feedback**: Validate as the user types (using `input` event) for immediate feedback.
+
+<!-- element class="fragment" -->
+
+- **Clear Error Messages**: Tell the user _what_ is wrong and _how_ to fix it.
+
+<!-- element class="fragment" -->
+
+- **Accessibility**: Ensure error messages are accessible to screen readers.
+
+<!-- element class="fragment" -->
+
+- **Usability**: Don't prevent submission until all fields are valid, but guide the user.
+
+<!-- element class="fragment" -->

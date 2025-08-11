@@ -302,7 +302,7 @@
 
 # Creating Elements and Adding them to the DOM
 
-Welcome to Day 2! Today, we shift our focus from core JavaScript concepts to the exciting world of DOM manipulation. We'll learn how to dynamically create HTML elements and insert them into your web page, bringing your static designs to life with interactive content.
+Today, we shift our focus from core JavaScript concepts to the exciting world of DOM manipulation. We'll learn how to dynamically create HTML elements and insert them into your web page, bringing your static designs to life with interactive content.
 
 ---
 
@@ -325,7 +325,7 @@ Before we start creating elements, let's briefly recap the DOM. The DOM is a pro
 These methods provide a flexible way to insert HTML or text into a specified position relative to an existing element.
 
 <!-- element class="fragment" -->
-
+---
 ### `insertAdjacentHTML(position, text)`
 <!-- element class="fragment" -->
 
@@ -338,6 +338,7 @@ Inserts a given HTML string into a specified position.
     -   `'afterend'`: After the element itself.
   
 <!-- element class="fragment" -->
+---
 ```html
 	<!-- HTML Structure -->
 	<div id="container">
@@ -370,8 +371,9 @@ These are fundamental methods for creating new DOM nodes from scratch.
 
 <!-- element class="fragment" -->
 
+---
 ### `document.createElement(tagName)`
-<!-- element class="fragment" -->
+
 
 Creates a new HTML element with the specified tag name.
 <!-- element class="fragment" -->
@@ -381,8 +383,10 @@ newDiv.id = 'myNewDiv';
 newDiv.className = 'box';
 ```
 <!-- element class="fragment" -->
+
+---
 ### `document.createTextNode(text)`
-<!-- element class="fragment" -->
+
 
 Creates a new text node with the specified text content.
 <!-- element class="fragment" -->
