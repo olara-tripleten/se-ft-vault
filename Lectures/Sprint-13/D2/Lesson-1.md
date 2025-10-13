@@ -1,0 +1,847 @@
+<style>
+/* Custom Reveal.js Theme - Educational/Course Style */
+
+/* Import a clean sans-serif font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Root variables for consistent theming */
+:root {
+  --bg-primary: #f5f4f0;
+  --bg-secondary: #ffffff;
+  --bg-accent: #000000;
+  --text-primary: #2c2c2c;
+  --text-secondary: #6b7280;
+  --text-light: #9ca3af;
+  --border-color: #e5e7eb;
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+/* Main reveal container */
+.reveal {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+/* Slide backgrounds */
+.reveal .slides {
+  background: var(--bg-primary);
+}
+
+.reveal .slides section {
+  background: var(--bg-primary);
+  padding: 2rem;
+  text-align: left;
+}
+
+/* Typography */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  text-transform: none;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem 0;
+}
+
+.reveal h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.reveal h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.reveal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.reveal p {
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+/* Lists */
+.reveal ul,
+.reveal ol {
+  margin: 0 0 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.reveal li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Code blocks */
+.reveal pre {
+  background: var(--bg-accent);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-medium);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.reveal code {
+  background: var(--bg-accent);
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.reveal pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* Card-style content blocks */
+.reveal .card {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--border-color);
+}
+
+/* Section numbers (like 01, 02, 03) */
+.reveal .section-number {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--text-light);
+  margin-right: 1rem;
+  line-height: 1;
+}
+
+/* Progress indicators */
+.reveal .progress-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Icon boxes (like the HTML/CSS diagram) */
+.reveal .icon-box {
+  background: var(--bg-accent);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-medium);
+}
+
+.reveal .icon-box h3 {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+/* Lesson/chapter listings */
+.reveal .lesson-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reveal .lesson-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.reveal .lesson-item:last-child {
+  border-bottom: none;
+}
+
+.reveal .lesson-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-right: 1.5rem;
+  min-width: 3rem;
+}
+
+.reveal .lesson-content h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.reveal .lesson-meta {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Completed items */
+.reveal .completed {
+  opacity: 0.7;
+}
+
+.reveal .completed::before {
+  content: "✓";
+  color: #10b981;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Navigation controls */
+.reveal .controls {
+  color: var(--text-secondary);
+}
+
+.reveal .controls button {
+  color: var(--text-secondary);
+}
+
+.reveal .controls button:hover {
+  color: var(--text-primary);
+}
+
+/* Progress bar */
+.reveal .progress {
+  background: var(--border-color);
+}
+
+.reveal .progress span {
+  background: var(--bg-accent);
+}
+
+/* Slide numbers */
+.reveal .slide-number {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--border-color);
+}
+
+/* Custom utility classes */
+.reveal .text-center {
+  text-align: center;
+}
+
+.reveal .text-secondary {
+  color: var(--text-secondary);
+}
+
+.reveal .text-light {
+  color: var(--text-light);
+}
+
+.reveal .mb-large {
+  margin-bottom: 3rem;
+}
+
+.reveal .mt-large {
+  margin-top: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .reveal {
+    font-size: 16px;
+  }
+  
+  .reveal h1 {
+    font-size: 2rem;
+  }
+  
+  .reveal h2 {
+    font-size: 1.75rem;
+  }
+  
+  .reveal .slides section {
+    padding: 1rem;
+  }
+  
+  .reveal .section-number {
+    font-size: 2rem;
+  }
+}
+
+/* Override default reveal styles */
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.6;
+  font-weight: inherit;
+}
+
+.reveal .slides section.has-dark-background,
+.reveal .slides section.has-dark-background h1,
+.reveal .slides section.has-dark-background h2,
+.reveal .slides section.has-dark-background h3,
+.reveal .slides section.has-dark-background h4,
+.reveal .slides section.has-dark-background h5,
+.reveal .slides section.has-dark-background h6 {
+  color: #ffffff;
+}
+</style>
+
+# A Practical Introduction to Regular Expressions
+
+---
+
+## What are Regular Expressions (Regex)?
+
+Imagine you have a superpower for searching and matching text. That's Regex!
+
+It's a special sequence of characters that helps you find specific patterns in strings, like emails, passwords, or URLs.
+
+<!-- element class="fragment" -->
+
+---
+
+## Why is this a Superpower?
+
+- **Validate Forms**: Check if a user entered a valid email or a strong password.
+- **Find & Replace**: Change all instances of "cat" to "dog" in a document.
+- **Pull Information**: Grab all the phone numbers from a web page.
+
+---
+
+## Let's Build a Regex!
+
+We'll learn the basic building blocks by creating a regex for a simple username.
+
+**Goal**: Match usernames that are 3-16 characters long and contain only letters, numbers, and underscores.
+
+---
+
+### Step 1: Define Allowed Characters
+
+We use square brackets `[]` to create a "character set".
+
+`[abc]` - Matches 'a', 'b', or 'c'.
+
+For our username, we want letters (`a-z`, `A-Z`), numbers (`0-9`), and underscore (`_`).
+
+<!-- element class="fragment" -->
+
+```regex
+[a-zA-Z0-9_]
+```
+
+<!-- element class="fragment" -->
+
+This matches a _single_ character that is a letter, number, or underscore.
+
+<!-- element class="fragment" -->
+
+---
+
+### Step 2: Define the Length
+
+We use curly braces `{}` to specify how many times the previous character set can repeat.
+
+`{3}` - Exactly 3 times.
+`{3,}` - 3 or more times.
+`{3,16}` - Between 3 and 16 times.
+
+```regex
+[a-zA-Z0-9_]{3,16}
+```
+
+<!-- element class="fragment" -->
+
+Now we're matching a sequence of 3 to 16 allowed characters.
+
+<!-- element class="fragment" -->
+
+---
+
+### Step 3: Anchor the Pattern
+
+What if someone enters `!!my_username!!`? Our current regex would still find a match!
+
+We need to anchor our pattern to the start (**^**) and end (**$**) of the string.
+
+`^` - The string must start with this pattern.
+`$` - The string must end with this pattern.
+
+```regex
+^[a-zA-Z0-9_]{3,16}$
+```
+
+<!-- element class="fragment" -->
+
+This is our final, complete regex for the username!
+
+<!-- element class="fragment" -->
+
+---
+
+## Let's Build an Email Regex
+
+**Goal**: Match a standard email format like `name@domain.com`.
+
+Structure: `(some characters)@(some characters).(some characters)`
+
+---
+
+### Email Regex: Step-by-Step
+
+1.  **The Name**: `^\S+`
+    - `^` Start of the string.
+    - `\S` Any character that is NOT a whitespace.
+    - `+` One or more times.
+
+<!-- element class="fragment" -->
+
+2.  **The "@" Symbol**: `^\S+@`
+    - Just add the literal `@`.
+
+<!-- element class="fragment" -->
+
+3.  **The Domain**: `^\S+@\S+`
+    - Same as the name part: one or more non-whitespace characters.
+
+<!-- element class="fragment" -->
+
+4.  **The ".":** `^\S+@\S+\.`
+    - The dot `.` is a special character, so we "escape" it with a backslash `\` to match a literal dot.
+
+<!-- element class="fragment" -->
+
+5.  **The Top-Level Domain & End**: `^\S+@\S+\.\S+$`
+    - `\S+` One or more non-whitespace characters for the end (like `com` or `org`).
+    - `$` Anchor the end.
+
+---
+
+## Let's Build a Password Regex
+
+**Goal**: A password that is at least 8 characters long and contains at least one uppercase letter, one lowercase letter, and one number.
+
+This one is tricky! We need "lookaheads".
+
+---
+
+### Password Regex: Lookaheads
+
+A lookahead is a special kind of group `(?=...)` that checks for a pattern _without_ consuming characters. It lets us enforce multiple conditions at once.
+
+<!-- element class="fragment" -->
+
+- `(?=.*[a-z])` - Does it contain a lowercase letter somewhere?
+- `(?=.*[A-Z])` - Does it contain an uppercase letter somewhere?
+- `(?=.*\d)` - Does it contain a digit somewhere?
+
+---
+
+### Password Regex: Step-by-Step
+
+1.  **Anchor the start**: `^`
+
+<!-- element class="fragment" -->
+
+2.  **Add the conditions (lookaheads)**:
+    `^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)`
+
+<!-- element class="fragment" -->
+
+3.  **Define the allowed characters and length**:
+    `^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$`
+    - `.` Any character (after the conditions are met).
+    - `{8,}` At least 8 characters long.
+    - `$` Anchor the end.
+
+---
+
+## Let's Build a URL Regex
+
+**Goal**: Match a basic web URL like `http://www.example.com`.
+
+Structure: `http(s)://(domain)`
+
+---
+
+### URL Regex: Step-by-Step
+
+1.  **The "http" part**: `^http`
+    - `^` Starts with `http`.
+
+<!-- element class="fragment" -->
+
+2.  **The optional "s"**: `^https?`
+    - `s?` The "s" is optional (matches 0 or 1 time).
+
+<!-- element class="fragment" -->
+
+3.  **The "://":** `^https?:\/\/`
+    - `:\/\/` The slashes `/` must be escaped with a backslash `\` to match a literal slash.
+
+<!-- element class="fragment" -->
+
+4.  **The rest of the domain**: `^https?:\/\/[^\s/$.?#].[^\s]*$`
+    - This part can get very complex! For a simple case, `\S+` (one or more non-whitespace characters) often works.
+    - A more robust (but complex) version is above.
+
+---
+
+## Test Your Regex!
+
+You don't have to guess! Use an online tool to build and test your expressions.
+
+**Regex101.com** is an excellent choice.
+
+![[https://i.imgur.com/9vG2zVz.png]]
+
+---
+
+## Using Regex in Your Code
+
+Here's how you might use our new password regex in a Mongoose schema.
+
+```javascript
+const userSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    required: true,
+    match: [/^[a-zA-Z0-9_]{3,16}$/, "Please enter a valid username."],
+  },
+  password: {
+    type: String,
+    required: true,
+    match: [
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/,
+      "Password must be at least 8 characters and include uppercase, lowercase, and a number.",
+    ],
+  },
+});
+```
+
+---
+
+## Conclusion
+
+- Regex is a pattern-matching superpower for text.
+- You can build them step-by-step from small, simple parts.
+- Start with character sets `[]`, add quantifiers `{}`, and anchor them `^$.
+- Use tools like Regex101 to make your life easier!
+
+---
+
+## Conclusion
+
+![[tt-logo.svg]]
+
+<style>
+/* Custom Reveal.js Theme - Educational/Course Style */
+
+/* Import a clean sans-serif font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Root variables for consistent theming */
+:root {
+  --bg-primary: #f5f4f0;
+  --bg-secondary: #ffffff;
+  --bg-accent: #000000;
+  --text-primary: #2c2c2c;
+  --text-secondary: #6b7280;
+  --text-light: #9ca3af;
+  --border-color: #e5e7eb;
+  --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+/* Main reveal container */
+.reveal {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+/* Slide backgrounds */
+.reveal .slides {
+  background: var(--bg-primary);
+}
+
+.reveal .slides section {
+  background: var(--bg-primary);
+  padding: 2rem;
+  text-align: left;
+}
+
+/* Typography */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  text-transform: none;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem 0;
+}
+
+.reveal h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.reveal h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.reveal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.reveal p {
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+/* Lists */
+.reveal ul,
+.reveal ol {
+  margin: 0 0 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.reveal li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Code blocks */
+.reveal pre {
+  background: var(--bg-accent);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-medium);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.reveal code {
+  background: var(--bg-accent);
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.reveal pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* Card-style content blocks */
+.reveal .card {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--border-color);
+}
+
+/* Section numbers (like 01, 02, 03) */
+.reveal .section-number {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--text-light);
+  margin-right: 1rem;
+  line-height: 1;
+}
+
+/* Progress indicators */
+.reveal .progress-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Icon boxes (like the HTML/CSS diagram) */
+.reveal .icon-box {
+  background: var(--bg-accent);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-medium);
+}
+
+.reveal .icon-box h3 {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+/* Lesson/chapter listings */
+.reveal .lesson-list {
+  list-style: none;
+  padding: 0;
+}
+
+.reveal .lesson-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.reveal .lesson-item:last-child {
+  border-bottom: none;
+}
+
+.reveal .lesson-number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-right: 1.5rem;
+  min-width: 3rem;
+}
+
+.reveal .lesson-content h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.reveal .lesson-meta {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Completed items */
+.reveal .completed {
+  opacity: 0.7;
+}
+
+.reveal .completed::before {
+  content: "✓";
+  color: #10b981;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Navigation controls */
+.reveal .controls {
+  color: var(--text-secondary);
+}
+
+.reveal .controls button {
+  color: var(--text-secondary);
+}
+
+.reveal .controls button:hover {
+  color: var(--text-primary);
+}
+
+/* Progress bar */
+.reveal .progress {
+  background: var(--border-color);
+}
+
+.reveal .progress span {
+  background: var(--bg-accent);
+}
+
+/* Slide numbers */
+.reveal .slide-number {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--border-color);
+}
+
+/* Custom utility classes */
+.reveal .text-center {
+  text-align: center;
+}
+
+.reveal .text-secondary {
+  color: var(--text-secondary);
+}
+
+.reveal .text-light {
+  color: var(--text-light);
+}
+
+.reveal .mb-large {
+  margin-bottom: 3rem;
+}
+
+.reveal .mt-large {
+  margin-top: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .reveal {
+    font-size: 16px;
+  }
+  
+  .reveal h1 {
+    font-size: 2rem;
+  }
+  
+  .reveal h2 {
+    font-size: 1.75rem;
+  }
+  
+  .reveal .slides section {
+    padding: 1rem;
+  }
+  
+  .reveal .section-number {
+    font-size: 2rem;
+  }
+}
+
+/* Override default reveal styles */
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.6;
+  font-weight: inherit;
+}
+
+.reveal .slides section.has-dark-background,
+.reveal .slides section.has-dark-background h1,
+.reveal .slides section.has-dark-background h2,
+.reveal .slides section.has-dark-background h3,
+.reveal .slides section.has-dark-background h4,
+.reveal .slides section.has-dark-background h5,
+.reveal .slides section.has-dark-background h6 {
+  color: #ffffff;
+}
+</style>
