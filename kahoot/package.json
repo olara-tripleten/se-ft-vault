@@ -1,0 +1,20 @@
+{
+  "name": "se-ft",
+  "version": "1.0.0",
+  "description": "- [Instructor]   - [Common links](./Instructor/Links.md)   - [Workflow](./Instructor/Workflow.md) - Sprint Lectures   - [Sprint-0](./Lectures/Sprint-0/Sprint-0)   - [Sprint-1](./Lectures/Sprint-1/Sprint-1)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "upload-kahoot": "node upload.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "playwright": "^1.56.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

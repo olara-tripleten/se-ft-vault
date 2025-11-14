@@ -1,5 +1,6 @@
 .obsidian
 .DS_Store
 Thumbs.db
-Prompt.md
-
+# The .env and node_modules are used by the kahoot uploader
+.env
+node_modules
