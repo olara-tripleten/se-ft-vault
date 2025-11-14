@@ -1,0 +1,119 @@
+{
+  "title": "Sprint 9",
+  "questions": [
+    {
+      "title": "What is React?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A programming language.",
+        "A database management system.",
+        "A JavaScript library for building user interfaces.",
+        "A CSS framework."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "React's declarative approach means you manually update the DOM for every state change.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is JSX?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A new version of JavaScript.",
+        "A templating engine for Node.js.",
+        "A syntax extension for JS that allows you to write HTML-like code.",
+        "A CSS preprocessor."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "How do you pass data from a parent component to a child component in React?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Using state.",
+        "Using props.",
+        "Using the data() method.",
+        "Using global variables."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "The useState hook is used to add state to class components.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is Vite?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A React component library.",
+        "A state management library.",
+        "A modern and fast build tool for web development.",
+        "A testing framework for React."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "In a Vite project, what is the purpose of the src/ directory?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To store static assets like favicon.ico.",
+        "To store the production build of the application.",
+        "To store the application's source code.",
+        "To store project dependencies."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "React DevTools is a command-line tool for creating new React projects.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of the key prop when rendering a list of elements in React?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To style the list items.",
+        "To give a unique ID to each element, helping React efficiently update UI.",
+        "To handle click events on the list items.",
+        "To sort the list items."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which of the following is a valid way to do conditional rendering in React?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Using the <if> and <else> tags.",
+        "Using the renderIf() method.",
+        "Using an if statement or the ternary operator.",
+        "Using the v-if directive."
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

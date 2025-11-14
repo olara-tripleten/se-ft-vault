@@ -1,0 +1,119 @@
+{
+  "title": "Sprint 12",
+  "questions": [
+    {
+      "title": "What is backend development primarily responsible for?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "The user interface and user experience.",
+        "Storing and managing data, authentication, and business logic.",
+        "Creating the visual design of a website.",
+        "Running JavaScript code in the browser."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Node.js allows you to run JavaScript on the server, outside of a browser.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "What is Express.js?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A database management system.",
+        "A frontend JavaScript library.",
+        "A minimal and flexible Node.js web application framework.",
+        "A templating engine."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is the purpose of nodemon?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To install Node.js packages.",
+        "To bundle a Node.js application for production.",
+        "To automatically restart a Node.js server when file changes are detected.",
+        "To manage database connections."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "In Express, middleware functions are executed after the route handler.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which HTTP method is used to retrieve a resource in a REST API?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is a common use case for the HTTP status code 201 Created?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "When a GET request is successful.",
+        "When a resource is successfully deleted.",
+        "When a new resource is successfully created via a POST request.",
+        "When a server error occurs."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "CORS prevents a web page from making requests to a different domain.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "What is Mongoose?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A NoSQL database.",
+        "A Node.js web framework.",
+        "An Object Data Modeling (ODM) library for MongoDB and Node.js.",
+        "A testing framework for Node.js."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "In Mongoose, what is the difference between a schema and a model?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "There is no difference.",
+        "A schema is a single document, while a model is a collection of documents.",
+        "A schema defines document structure, a model is compiled from a schema.",
+        "A schema is used for reading data, while a model is used for writing data."
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

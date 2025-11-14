@@ -1,0 +1,141 @@
+{
+  "title": "Sprint 4",
+  "questions": [
+    {
+      "title": "What is the most common way to create an array in JavaScript?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "new Array()",
+        "[] (array literal)",
+        "{} (object literal)",
+        "array()"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "JavaScript array indexes are 1-based, meaning the first element is at index 1.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which method adds a new element to the end of an array?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "pop()",
+        "shift()",
+        "push()",
+        "unshift()"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is the most common way to create an object in JavaScript?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "new Object()",
+        "[] (array literal)",
+        "{} (object literal)",
+        "object()"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "You can access object properties using both dot notation (.) and bracket notation ([]).",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "What is a function in JavaScript?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A variable that holds a single value.",
+        "A data type for storing numbers.",
+        "A reusable block of code designed to perform a particular task.",
+        "A conditional statement."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is the purpose of the return statement in a function?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To print a value to the console.",
+        "To stop the execution of the entire script.",
+        "To stop the execution of a function and return a value.",
+        "To declare a new variable."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Arrow functions (`=>`) are a more modern and shorter way to write functions in JavaScript.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "What is the DOM (Document Object Model)?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A JavaScript library for animations.",
+        "A CSS framework for responsive design.",
+        "A programming interface for web documents, as a tree of objects.",
+        "A server-side language."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Which method is used to select the first element that matches a specified CSS selector?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "getElementById()",
+        "getElementsByClassName()",
+        "querySelector()",
+        "querySelectorAll()"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "The addEventListener() method is used to listen for browser events, such as clicks or key presses.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "Which property is used to add, remove, or toggle CSS classes on an HTML element?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "className",
+        "style",
+        "classList",
+        "attributes"
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

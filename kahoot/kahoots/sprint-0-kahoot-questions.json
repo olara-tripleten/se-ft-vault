@@ -1,0 +1,179 @@
+{
+  "title": "Sprint 0",
+  "questions": [
+    {
+      "title": "What is the backbone of the web, responsible for structuring content?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "Which CSS property is used to create rounded corners for an element?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "border-style",
+        "border-width",
+        "border-radius",
+        "border-color"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "In HTML, tags must always close in the correct order (last opened, first closed).",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "Which HTML attribute is used to uniquely identify a single element on a page?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "class",
+        "id",
+        "src",
+        "style"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the primary purpose of CSS (Cascading Style Sheets)?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To define the structure of web pages",
+        "To add interactivity to web pages",
+        "To control the visual presentation of web pages",
+        "To manage server-side logic"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Which CSS selector has the highest specificity?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Element Selector",
+        "Class Selector",
+        "ID Selector",
+        "Universal Selector"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "margin is an inherited CSS property.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "In the CSS Box Model, what is the inner spacing of an element, between the content and the border?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Margin",
+        "Border",
+        "Padding",
+        "Content"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Which type of HTML element typically starts on a new line and takes up the full available width?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Inline element",
+        "Block element",
+        "Inline-block element",
+        "Semantic element"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What CSS property is used to create a Flex Container?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "display: grid;",
+        "display: block;",
+        "display: flex;",
+        "display: inline;"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Which Flexbox property controls the alignment of items along the main axis?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "align-items",
+        "flex-direction",
+        "justify-content",
+        "flex-wrap"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Changes made in browser Dev Tools are permanent and saved to the source code.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the recommended way to include CSS in a professional web project?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Inline styles",
+        "Internal styles",
+        "External stylesheet",
+        "JavaScript"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What does background-size: cover; do for a background image?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Resizes the image to fit completely within the element",
+        "Tiles the image across the element",
+        "Ensures the image covers the entire element, regardless of aspect ratio",
+        "Centers the image within the element"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "According to best practices, what should AI not replace in a student's learning process?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Code generation",
+        "Critical thinking",
+        "Explanations of concepts",
+        "Practice exercises"
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}

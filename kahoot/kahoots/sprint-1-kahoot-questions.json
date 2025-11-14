@@ -1,0 +1,141 @@
+{
+  "title": "Sprint 1",
+  "questions": [
+    {
+      "title": "What is the main purpose of using semantic HTML elements?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To make the website look more stylish.",
+        "To describe the meaning and structure of the content.",
+        "To make the website load faster.",
+        "To add interactivity to the website."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "An id attribute must be unique on a single web page.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "Which CSS pseudo-class is used to style a link that is currently being hovered over by the user's mouse?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        ":visited",
+        ":active",
+        ":hover",
+        ":focus"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What does the BEM methodology stand for?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Block, Element, Modifier",
+        "Box, Element, Margin",
+        "Block, Entity, Model",
+        "Border, Element, Margin"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "In BEM, an element can be placed outside of its corresponding block.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which CSS position value removes an element from the normal flow and positions it relative to a positioned ancestor?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "relative",
+        "absolute",
+        "fixed",
+        "static"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of the z-index property in CSS?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To set the zoom level of an element.",
+        "To control the stacking order of positioned elements.",
+        "To define the width of an element.",
+        "To align text within an element."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "The z-index property works on elements with position: static.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the recommended way to open a project folder in VSCode?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Drag and drop the folder into VSCode.",
+        "Use the File > Open Folder menu.",
+        "Open individual files one by one.",
+        "Use the command line."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the primary benefit of using the Live Server extension in VSCode?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "It automatically writes code for you.",
+        "It deploys your website to a live server.",
+        "It provides a real-time preview of your web page with auto-refresh.",
+        "It validates your HTML and CSS code."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "An absolute file path starts with a / and specifies the location from the root of the website.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "In a file path, what does ../ represent?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "The current directory.",
+        "The root directory.",
+        "Go up one directory level.",
+        "A subdirectory."
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}
