@@ -1,0 +1,2 @@
+note:
+Practice, use this lesson to reinforce either the authentication process, local storage or making authenticated requests, really important to go over this multiple times and making sure the topic is understood by students.

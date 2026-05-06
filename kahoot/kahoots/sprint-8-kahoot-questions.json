@@ -1,0 +1,141 @@
+{
+  "title": "Sprint 8",
+  "questions": [
+    {
+      "title": "What is the primary purpose of 'building' a web project?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To write the initial HTML structure.",
+        "To transform source code into an optimized format for web servers.",
+        "To install project dependencies.",
+        "To create a new Git branch."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "NPM (Node Package Manager) is primarily used for writing JavaScript code.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the main function of Webpack?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To write HTML code.",
+        "To style web pages with CSS.",
+        "To bundle JavaScript modules and other assets for production.",
+        "To manage server-side databases."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "In asynchronous JavaScript, what is the role of the Event Loop?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To execute all code line by line.",
+        "To store variables and functions.",
+        "Monitor the call stack & callback queue, move callbacks to the stack.",
+        "To handle DOM events directly."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "A Promise in JavaScript can only have two states: pending and fulfilled.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is a REST API?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A specific JavaScript library for making network requests.",
+        "A type of database.",
+        "An architectural style for creating web services.",
+        "A programming language."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Which HTTP method is typically used to create a new resource on a server?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "GET",
+        "POST",
+        "UPDATE",
+        "CREATE"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "The fetch() API in JavaScript returns a promise that resolves directly to the JSON data from the response.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of the async keyword before a function declaration?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To make the function execute synchronously.",
+        "To make the function return a promise.",
+        "To declare the function as a constructor.",
+        "To prevent the function from being called."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the command to create a new branch in Git and switch to it in one step?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "git branch <branch-name>",
+        "git switch <branch-name>",
+        "git checkout -b <branch-name>",
+        "git new-branch <branch-name>"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "git pull is the command used to upload your local branch's commits to a remote repository.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of the gh-pages package in a web project?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To install all project dependencies.",
+        "To run a local development server.",
+        "To automate the deployment of a project to GitHub Pages.",
+        "To transpile modern JavaScript to ES5."
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

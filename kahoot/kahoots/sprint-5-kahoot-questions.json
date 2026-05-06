@@ -1,0 +1,141 @@
+{
+  "title": "Sprint 5",
+  "questions": [
+    {
+      "title": "What is the purpose of event.preventDefault() in a form submission event listener?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To submit the form.",
+        "To validate the form fields.",
+        "To prevent the default form submission behavior (page reload).",
+        "To clear the form fields."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "innerHTML is safer than textContent because it automatically escapes HTML tags.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What does the target property of the event object refer to?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "The event listener function.",
+        "The parent element of the event target.",
+        "The element that triggered the event.",
+        "The type of event that occurred."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Which console method is best for logging critical errors that include a stack trace?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "console.log()",
+        "console.warn()",
+        "console.error()",
+        "console.info()"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "A ReferenceError occurs when you try to perform an operation on a value of the wrong type.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What does the debugger statement do in JavaScript?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "It logs a message to the console.",
+        "It throws an error.",
+        "It pauses the execution of the code and opens the debugger.",
+        "It fixes bugs in the code automatically."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Which string method returns true if a string contains a specified value, and false otherwise?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "indexOf()",
+        "search()",
+        "includes()",
+        "match()"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "The switch statement is a good alternative to a long if...else if...else statement.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "Which array method creates a new array by calling a function on every element?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "forEach()",
+        "map()",
+        "filter()",
+        "reduce()"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which array method checks if at least one element passes a test?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "every()",
+        "find()",
+        "some()",
+        "filter()"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "The sort() method, by default, sorts numbers in ascending numerical order.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of the git commit --amend command?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To create a new commit.",
+        "To undo the last commit.",
+        "To modify the last commit.",
+        "To view the commit history."
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "title": "Sprint 14",
+  "questions": [
+    {
+      "title": "What is the difference between authentication and authorization?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "They are the same thing.",
+        "Authentication is about access, authorization is about identity.",
+        "Authentication is about identity, authorization is about access.",
+        "Authentication is for logging in, and authorization is for logging out."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "It is a good practice to store user passwords in plain text in a database.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of bcrypt?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To encrypt data in transit.",
+        "To create JSON Web Tokens.",
+        "To hash passwords for secure storage.",
+        "To validate user input."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is a JSON Web Token (JWT)?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A type of database.",
+        "A JavaScript library for building user interfaces.",
+        "A compact, URL-safe way to represent claims between two parties.",
+        "A method for making API calls."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "A JWT consists of four parts: header, payload, signature, and footer.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of an authorization middleware in an Express application?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To log information about incoming requests.",
+        "To parse the body of incoming requests.",
+        "To protect routes that require authentication.",
+        "To handle errors that occur during request processing."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is a regular expression (regex)?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A type of JavaScript function.",
+        "A way to style web pages.",
+        "A sequence of characters that defines a search pattern.",
+        "A method for making API calls."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "In regex, the ^ character is used to anchor a pattern to the end of a string.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of a 'lookahead' in a regular expression?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To match a character at the beginning of a string.",
+        "To match a character at the end of a string.",
+        "To check for a pattern without consuming characters.",
+        "To repeat a pattern a certain number of times."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "How can you use Postman to test for errors in your API?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "By sending only valid requests.",
+        "By sending invalid requests, like one with a missing required field.",
+        "By checking the server logs.",
+        "By writing unit tests for your API."
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "title": "Sprint 7",
+  "questions": [
+    {
+      "title": "Which keyboard event is fired when a key is pressed down?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "keyup",
+        "keydown",
+        "keypress",
+        "keyclick"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "The event.stopPropagation() method is used to prevent the default action of an event, such as a form submission.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is event delegation?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Removing an event listener from an element.",
+        "Attaching one listener to a parent to handle events for its children.",
+        "Creating a custom event.",
+        "Triggering an event programmatically."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which HTML5 attribute can be used to disable the browser's built-in form validation?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "validate=\"false\"",
+        "disablevalidation",
+        "novalidate",
+        "validation=\"off\""
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "The :valid CSS pseudo-class applies to a form element when its content validates correctly.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "What is the main advantage of using JavaScript for form validation over built-in browser validation?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "It is faster.",
+        "It requires less code.",
+        "It provides more control and customizability.",
+        "It is more secure."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is an IIFE (Immediately Invoked Function Expression)?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A function that is never executed.",
+        "A function that is executed when a button is clicked.",
+        "A JavaScript function that runs as soon as it is defined.",
+        "A function that returns another function."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "ES Modules use require() and module.exports to define dependencies and expose functionality.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is a class in Object-Oriented Programming?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A single object with properties and methods.",
+        "A function that creates other functions.",
+        "A blueprint for creating objects.",
+        "A type of variable."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Which keyword is used to create a subclass that inherits from a parent class?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "inherits",
+        "super",
+        "extends",
+        "class"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Encapsulation is the principle of allowing a new class to inherit properties and methods from an existing class.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What does the super() method do in a child class constructor?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "It creates a new instance of the child class.",
+        "It calls the constructor of the parent class.",
+        "It defines a new method for the child class.",
+        "It returns the parent class object."
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}

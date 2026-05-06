@@ -1,0 +1,129 @@
+{
+  "title": "Sprint 6",
+  "questions": [
+    {
+      "title": "What is the main difference between global scope and local scope in JavaScript?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Global variables are declared with let, and local variables with const.",
+        "Global variables are accessible from anywhere, local variables are not.",
+        "Global scope is for functions, and local scope is for objects.",
+        "There is no difference."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Variable shadowing is when an inner scope variable with the same name as an outer variable hides the outer variable.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": ["True", "False"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is a key advantage of arrow functions (`=>`)?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "They can be used as constructors.",
+        "They have their own arguments object.",
+        "They provide a more concise syntax for writing function expressions.",
+        "They are hoisted to the top of their scope."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is the purpose of rest parameters (...) in a function definition?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To spread the elements of an array into individual arguments.",
+        "To collect an indefinite number of arguments into an array.",
+        "To set a default value for a parameter.",
+        "To create a shallow copy of an object."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "If an object is passed to a function, a copy is made, so modifications inside the function don't affect the original.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": ["True", "False"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which method is used to create a new element in the DOM?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "document.querySelector()",
+        "document.appendChild()",
+        "document.createElement()",
+        "document.innerHTML"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is the purpose of the <template> element in HTML?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To define a new CSS style.",
+        "To create a new JavaScript function.",
+        "To hold client-side content that is not rendered but can be used later.",
+        "To create a form for user input."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "Event delegation is the practice of attaching an event listener to each individual element in a list.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": ["True", "False"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which property would you use to get the next element sibling of a node?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "nextSibling",
+        "childNode",
+        "nextElementSibling",
+        "parentNode"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is the primary difference between Object.keys() and a for...in loop?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Object.keys() returns values, while for...in iterates over keys.",
+        "Object.keys() returns own properties, for...in includes prototype props.",
+        "for...in is faster than Object.keys().",
+        "There is no difference."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Object destructuring allows you to extract properties from an object and assign them to variables with the same name.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": ["True", "False"],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "In array destructuring, how can you skip elements?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "By using the skip() method.",
+        "By using a negative index.",
+        "By using empty commas (, ,).",
+        "It's not possible to skip elements."
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

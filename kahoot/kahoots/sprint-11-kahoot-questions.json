@@ -1,0 +1,119 @@
+{
+  "title": "Sprint 11",
+  "questions": [
+    {
+      "title": "What is the primary purpose of React Router?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To manage state in a React application.",
+        "To style React components.",
+        "To enable navigation and routing in a React application.",
+        "To make API calls in a React application."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "In React Router, you should use the <a> tag for navigation between pages.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which component is used to define the routes in a React Router application?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "<BrowserRouter>",
+        "<Link>",
+        "<Routes>",
+        "<Route>"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "How can you create a 'Not Found' page for routes that don't match any other route?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "By creating a component named NotFound.",
+        "By using a special <NotFound> component from React Router.",
+        "By using a <Route> with a path of *.",
+        "By configuring it in the package.json file."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "The useNavigate hook is used to access the parameters of the current route.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of the <Outlet> component in nested routing?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To define a new route.",
+        "To link to a nested route.",
+        "To render the matched child route component.",
+        "To access the parameters of the parent route."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "How do you define a dynamic segment in a route path?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "By using square brackets, e.g., [userId].",
+        "By using curly braces, e.g., {userId}.",
+        "By using a colon, e.g., :userId.",
+        "By using a dollar sign, e.g., $userId."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "A Higher-Order Component (HOC) is a component that renders other components.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is a custom hook in React?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A built-in React hook.",
+        "A component that uses other hooks.",
+        "A JS function starting with 'use' that may call other hooks.",
+        "A special type of component for handling forms."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is the purpose of json-server?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To create a new React project.",
+        "To bundle a React application for production.",
+        "To simulate a backend server for development purposes.",
+        "To manage state in a React application."
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

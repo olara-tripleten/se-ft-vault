@@ -1,0 +1,287 @@
+{
+  "title": "Sprint 3",
+  "questions": [
+    {
+      "title": "What is CSS Grid Layout primarily used for?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "One-dimensional layout (rows or columns)",
+        "Two-dimensional layout (rows and columns)",
+        "Styling text and fonts",
+        "Adding animations to elements"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which CSS property is used to define an element as a Grid Container?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "display: flex;",
+        "display: block;",
+        "display: grid;",
+        "display: inline;"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What does the fr unit in CSS Grid represent?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Fixed ratio",
+        "Free space",
+        "Fractional unit",
+        "Flexible row"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "The gap property in CSS Grid adds spacing between rows and columns.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "Which function simplifies repetitive column or row definitions in CSS Grid?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "repeat()",
+        "iterate()",
+        "loop()",
+        "duplicate()"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "What do grid-column and grid-row properties use to place items in the grid?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Pixel values",
+        "Grid lines",
+        "Element names",
+        "Row and column indices (0-based)"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "auto-fit and minmax() are used together to create responsive grids without media queries.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "What is the primary goal of Responsive Design?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To make websites load faster",
+        "To ensure web pages render well on a variety of devices and window sizes",
+        "To add complex animations to web pages",
+        "To optimize websites for search engines"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which of the following is a 'fixed unit' and should be avoided for responsive design?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "%",
+        "em",
+        "px",
+        "rem"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "The em unit is relative to what?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "The root font-size",
+        "The viewport width",
+        "The element's font-size",
+        "The parent element's width"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "The rem unit is relative to what?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "The root font-size",
+        "The viewport height",
+        "The element's font-size",
+        "The parent element's font-size"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "Media queries allow applying CSS rules only when certain conditions are met, such as screen width.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "What is a common mistake to avoid in responsive design regarding element heights?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Using min-height",
+        "Using height: auto;",
+        "Using fixed heights",
+        "Using padding"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "In browser developer tools, what is the primary function of the 'Toggle device toolbar'?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To inspect network requests",
+        "To simulate different device viewports and orientations",
+        "To edit JavaScript code",
+        "To view console logs"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is a common cause of horizontal overflow in responsive design?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Using relative units like em",
+        "Using display: flex;",
+        "Using a fixed width value on an element",
+        "Using media queries"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "For developers, Figma is considered a single source of truth for what?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Backend API specifications",
+        "Colors, typography, spacing, and component specifications",
+        "Database schemas",
+        "User authentication flows"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "In Figma, what is the difference between padding and margin in terms of visual spacing?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Padding is external spacing, margin is internal spacing.",
+        "Padding is internal spacing, margin is external spacing.",
+        "They are interchangeable terms with no difference.",
+        "Padding applies to text, margin applies to images."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "When extracting values from Figma, which of these should a developer ignore for responsive web behavior?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Exact hex/RGB color values",
+        "Font family, size, weight, and line-height",
+        "Absolute positioning and fixed heights",
+        "Auto Layout spacing"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "In responsive design, what is a 'breakpoint'?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "A point where the website's code breaks and causes an error.",
+        "A specific viewport width at which the website's layout changes.",
+        "A CSS property for creating breaks in text.",
+        "A tool for debugging responsive layouts."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "In Figma, what tool would you use to measure the distance between two elements?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "The Slice tool.",
+        "The Ruler tool.",
+        "The Scale tool.",
+        "Hold Alt/Option, select one element, and hover over another."
+      ],
+      "correctAnswerIndex": 3
+    },
+    {
+      "title": "How can you make a grid item span two columns?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "grid-column: 2;",
+        "grid-column-span: 2;",
+        "grid-column: span 2;",
+        "column-span: 2;"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is the first step to deploy a project to GitHub Pages?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Create a new repository",
+        "Make the repository public",
+        "Commit all changes",
+        "Push to the main branch"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "In GitHub Pages settings, what should be chosen for the 'Source' option to deploy from a branch?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "None",
+        "GitHub Actions",
+        "Deploy from a branch",
+        "Custom workflow"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "After deploying to GitHub Pages, if the site doesn't open at the given URL, what can sometimes resolve the issue?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Deleting and re-creating the repository",
+        "Adding /index.html to the end of the URL",
+        "Changing the branch to gh-pages",
+        "Clearing browser cache"
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}

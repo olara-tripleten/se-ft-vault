@@ -1,0 +1,141 @@
+{
+  "title": "Sprint 2",
+  "questions": [
+    {
+      "title": "What is the terminal command to change the current directory?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "ls",
+        "pwd",
+        "cd",
+        "mkdir"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "git is a cloud service for hosting repositories, while GitHub is a command-line tool for version control.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which command is used to stage all changes in the current directory for a Git commit?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "git commit -a",
+        "git add .",
+        "git stage all",
+        "git add *"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of the <iframe> element in HTML?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To play audio files.",
+        "To display images.",
+        "To embed external content, like a webpage or video.",
+        "To create a form."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "The autoplay attribute on a <video> element will always work, even if the video is not muted.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which CSS transform function is used to resize an element?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "rotate()",
+        "translate()",
+        "scale()",
+        "skew()"
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "What is the purpose of the transition property in CSS?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To create complex, multi-step animations.",
+        "To smoothly animate property changes.",
+        "To change the position of an element.",
+        "To apply a filter to an element."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Animating width and height is generally better for performance than animating transform.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "Which HTML element is used to create a multi-line text input field in a form?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "<input type=\"text\">",
+        "<textarea>",
+        "<input type=\"multiline\">",
+        "<form-input>"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "To group a set of radio buttons so that only one can be selected at a time, what must they all share?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "The same id.",
+        "The same class.",
+        "The same name attribute.",
+        "The same value."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "BEM suggests all CSS for a block, its elements, and modifiers go in one file for that block.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "In a BEM CSS import, where are block files typically imported?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Directly into the HTML file.",
+        "Into a blocks.css file.",
+        "Into a page-specific CSS file.",
+        "Into a vendor.css file."
+      ],
+      "correctAnswerIndex": 2
+    }
+  ]
+}

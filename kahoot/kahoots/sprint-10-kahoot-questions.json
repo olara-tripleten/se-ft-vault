@@ -1,0 +1,119 @@
+{
+  "title": "Sprint 10",
+  "questions": [
+    {
+      "title": "What is the primary purpose of React Hooks?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To create class components.",
+        "To use React state and lifecycle features in function components.",
+        "To replace JSX.",
+        "To manage project dependencies."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "You can call React Hooks inside loops or conditions.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What does the useState hook return?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "The current state value.",
+        "A function to update the state.",
+        "An array containing the current state and a function to update it.",
+        "An object with the current state and a function to update it."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "When should you use the useEffect hook?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To manage component state.",
+        "To render JSX.",
+        "To perform side effects, like fetching data or subscribing to a service.",
+        "To handle user events."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "If you provide an empty dependency array ([]) to useEffect, the effect will run after every render.",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What is the purpose of the useMemo hook?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To memoize a callback function.",
+        "To memoize the result of a function.",
+        "To manage component state.",
+        "To perform side effects."
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "What does it mean to 'lift state up' in React?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To store state in a global variable.",
+        "To move state from a parent component to a child component.",
+        "To move shared state to the closest common ancestor of components.",
+        "To use the useState hook."
+      ],
+      "correctAnswerIndex": 2
+    },
+    {
+      "title": "The React Context API is a replacement for local component state (useState).",
+      "type": "True/False",
+      "timeLimit": 20,
+      "answers": [
+        "True",
+        "False"
+      ],
+      "correctAnswerIndex": 1
+    },
+    {
+      "title": "How do you subscribe to a context in a function component?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "Using the useContext hook.",
+        "Using the Context.Consumer component.",
+        "Using the connect function.",
+        "Using the subscribe method."
+      ],
+      "correctAnswerIndex": 0
+    },
+    {
+      "title": "What is the purpose of the children prop in React?",
+      "type": "Quiz",
+      "timeLimit": 20,
+      "answers": [
+        "To pass data from a child component to a parent component.",
+        "To pass components or elements as children to other components.",
+        "To manage the state of a component.",
+        "To handle events in a component."
+      ],
+      "correctAnswerIndex": 1
+    }
+  ]
+}
